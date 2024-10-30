@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table_Assigment</title>
+
+    <style>
+        * {
+            font-size: 22px;
+        }
+
+        body {
+            background: linear-gradient(90deg, rgb(57, 29, 48), rgb(93, 48, 41),rgb(28, 60, 68));
+            height: 100vh;
+        }
+
+        .border {
+            border: 1px solid black;
+            margin: auto;
+        }
+    </style>
+
+</head>
+<body>
+    <br><br><br><br><br><br>
+    <table border="2" cellspacing="0" cellpadding="25" class="border">
+        <tbody>
+            <tr>
+                <td rowspan="2">No</th>
+                <td>Problem</th>
+                <td>for</th>
+                <td>a web</th>
+            </tr>
+
+            <tr>
+                <td>Professional</td>
+                <td colspan="2" rowspan="3" align="center">as</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">you</td>
+            </tr>
+
+            <tr>
+                <td>will</td>
+                <td rowspan="2" align="center">see</td>
+            </tr>
+
+            <tr>
+                <td>in</td>
+                <td>a few</td>
+                <td>minus</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <script>
+        const border = document.querySelector('.border');
+        
+        async function changeRed () {
+            return new Promise ((resolve, reject) => {
+                setTimeout(() => {
+                    border.style.color = '#ff6666';
+                    border.style.borderColor = '#ff6666';
+                    resolve();
+                }, 1000)
+            });
+        }
+
+        async function changeYellow () {
+            return new Promise ((resolve, reject) => {
+                setTimeout(() => {
+                    border.style.color = 'yellow';
+                    border.style.borderColor = 'yellow';
+                    resolve();
+                }, 1000)
+            });
+        }
+
+        async function changeOrange () {
+            return new Promise ((resolve, reject) => {
+                setTimeout(() => {
+                    border.style.color = 'orange';
+                    border.style.borderColor = 'orange';
+                    resolve();
+                }, 1000)
+            });
+        }
+
+        async function changeGreen() {
+            return new Promise ((resolve, reject) => {
+                setTimeout(() => {
+                    border.style.color = 'green';
+                    border.style.borderColor = 'green';
+                    resolve();
+                }, 1000)
+            });
+        }
+
+        async function changeBlue () {
+            return new Promise ((resolve, reject) => {
+                setTimeout(() => {
+                    border.style.color = 'lightblue';
+                    border.style.borderColor = 'lightblue';
+                    resolve();
+                }, 1000)
+            });
+        }
+
+        async function changePink () {
+            return new Promise ((resolve, reject) => {
+                setTimeout(() => {
+                    border.style.color = 'pink';
+                    border.style.borderColor = 'pink';
+                    resolve();
+                }, 1000)
+            });
+        }
+
+        async function colorChangingFunction () {
+            await changeYellow();
+            await changeOrange();
+            await changeGreen();
+            await changeBlue();
+            await changePink();
+            await changeRed();
+        }
+
+        colorChangingFunction();
+        setInterval(() => {
+            colorChangingFunction()
+        }, 6000)
+    </script>
+    
+</body>
+
+</html>
