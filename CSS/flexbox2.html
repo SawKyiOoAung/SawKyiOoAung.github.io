@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .flex-container {
+        display: flex;
+        background-color: aqua;
+        justify-content: flex-start;
+        align-items: center;
+        height: 200px;
+
+        /* 
+            Justify-content
+            -flex-start => left
+            -flex-endm => right
+            -center => center
+            
+            align-item
+            -flex-start - top
+            -flex-end - bottom
+            -center - center 
+            */ 
+    }
+
+    .flex-item {
+        background-color: lightblue;
+        padding: 10px;
+        margin: 5px;
+    }
+</style>
+<body>
+    <div class="flex-container">
+        <p class="flex-item">Item 1</p>
+        <p class="flex-item">Item 2</p>
+        <p class="flex-item">Item 3</p>
+    </div>
+</body>
+</html>

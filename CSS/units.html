@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* Absolute unit - fixed value
+        px - button, icon, image ,heading , label
+        pt - cm , mm, in - print
+        
+        Relative unit - depend on something
+
+        percentage - depend on its parent
+        
+        element(em) - depend on its parend font size
+        
+        Root element (rem) - depend on its root/ browser*/
+
+        button {
+            border: 1px solid black;
+            padding: 10px 30px;
+        }
+
+        .container {
+            margin-top: 20px;
+            width: 100%;
+            background-color: red;
+        }
+
+        .box {
+            width: 50%; /*50% of container width*/
+            padding: 2%; /* 2% of container width*/
+            background-color: gray;
+        }
+
+        .em-container {
+            font-size: 20px;
+        }
+
+        .normal-text {
+            font-size: 1em; /* 1em * 20px = 20px */
+        }
+
+        .larger-text {
+            font-size: 2em; /* 2em * 20px = 40px */
+        }
+
+        .em-box {
+            font-size: 20px;
+        }
+
+        .em-box p {
+            border: 1px solid black;
+            padding: 1em;
+            margin: 2em
+        }
+
+        /* rem */
+
+        
+
+        header {
+            /* 1 * 16 = 16px */
+            font-size: 1rem;
+        }
+
+        .title {
+            /* 2rem * 16px = 32px */
+            font-size: 3rem;
+        }
+
+        .description {
+            font-size: 1rem;
+            margin-top: 3rem;
+        }
+
+        /* vw, vh - view port width, height 100 */
+
+        .vw-container {
+            width: 50vw;
+            height: 100px;
+            background-color: lightblue;
+            font-size: 2vw;
+        }
+
+        .fullscreen-header {
+            height: 100vh;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <button>Save</button>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+
+    <!-- em -->
+    <div class="em-container">
+        <p class="normal-text">Normal Text</p>
+        <p class="larger-text">Larger Text</p>
+    </div>
+
+    <div class="em-box">
+        <p>box content</p>
+    </div>
+
+    <!-- rem -->
+     <div class="header">
+        <p class="title">Title</p>
+        <p class="description">This is rem.</p>
+     </div>
+
+     <!-- vw view port width -->
+      <div class="vw-container">
+        <p>THis is view port width</p>
+      </div>
+
+      <!-- vh view port height -->
+       <div class="fullscreen-header">
+        <p>This is header takes up 100vh</p>
+       </div>
+</body>
+</html>

@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/af12da7f42.js" crossorigin="anonymous"></script>
+
+    <!-- google material icon -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    
+
+    <!-- Magnific popup cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+  
+    <!-- owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom-css -->
+    <link rel="stylesheet" href="style.css">
+    <title>SAW-bookstore</title>
+</head>
+<body>
+
+    <div class="over-lay"></div>
+
+    <!-- login-form-overlay -->
+    <div class="login-form-overlay">
+        <div class="login-form-content">
+            <div class="x-mark">
+                <div></div>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="login-content-title">
+                <h1 class="mb-0">SAW</h1>
+                <p>Sign in or Create an Account</p>
+            </div>
+            <form action="">
+                <div class="email-input-1">
+                    <input type="email" name="email" id="email" placeholder="Email Address">
+                    <button>
+                        <i class="fa-solid fa-user"></i>
+                    </button>
+                </div> 
+
+                <div class="password-input">
+                    <input type="password" name="password" id="password" placeholder="Password">
+                    <button>
+                        <i class="fa-regular fa-eye"></i>
+                    </button>
+                </div>
+
+                <div class="remember-me">
+                    <div class="remember-me-right">
+                        <input type="checkbox" name="" id="">
+                        <label for="">Remember me</label>
+                    </div>
+                    <div class="remember-me-left">
+                        <span>Fogot your password?</span>
+                    </div>
+                </div>
+
+                <div class="create-an-account">
+                    <button>Sign In & Continue</button>
+                    <button>Create an Account</button>
+                </div>
+
+                <p class="agreeing-term">By signing in you are agreeing to our <br> <span>Terms of Use</span> and our <span>Privacy.</span></p>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- ======================================Start Header Area====================================== -->
+    <section class="header-area">
+        <!-- nav 1 -->
+        <nav class="navbar navbar-expand-lg nav1">
+            <div class="container-fluid d-flex justify-content-spacebetween align-items-center">
+                
+                <a class="navbar-brand me-5 d-flex" href="#">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="saw">SAW</div>
+                </a>
+                <form class="d-flex me-5 ms-6" role="search">
+                    <input class="form-control" type="search" placeholder="Search 19 million titles by title, author, or ISBN" aria-label="Search">
+                    <button class="btn" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+                <div class="user-login me-4">
+                    <i class="fa-regular fa-user"></i>
+                    <div class="d-flex flex-column justify-content-center align-items-start">
+                        <p class="mb-0">Welcome</p>
+                        <p class="mb-0">Sign in / Register</p>
+                    </div>
+                </div>
+                <div class="whishlist d-flex flex-column align-items-center me-4">
+                    <i class="fa-regular fa-heart"></i>
+                    <p class="mb-0">Whishlist</p>
+                </div>
+                <div class="cart d-flex flex-column align-items-center">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="material-symbols-outlined ms-4 ">
+                            wb_sunny
+                        </span>
+                    </div>
+                    <p class="mb-0">Cart</p>
+                </div>
+            </div>
+        </nav>
+        <!-- nav2 -->
+        <nav class="navbar navbar-expand-lg nav2">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a class="nav-link" id="shop-category" href="#">Shop by categories
+                                    <i class="fa-solid fa-caret-down"></i> 
+                                </a>  
+                                <div class="dropdown-content">
+                                    <a href="nav-link">Arts & Photography</a>
+                                    <a href="nav-link">Biographies & Memoirs</a>
+                                    <a href="nav-link">Business & Economics</a>
+                                    <a href="nav-link">Children's Books</a>
+                                    <a href="nav-link">Comics - Manga & Graphic Novels</a>
+                                    <a href="nav-link">Computers & Internet</a>
+                                    <a href="nav-link">Cookbooks - Food & Wine</a>
+                                    <a href="nav-link">Crafts - Hobbies & Home</a>
+                                    <a href="nav-link">Education Studies & Teaching</a>
+                                    <a href="nav-link">Engineering & Transportation</a>
+                                    <a href="nav-link">Health - Fitness & Nutrition</a>
+                                    <a href="nav-link">History</a>
+                                    <a href="nav-link">Humour & Entertainment</a>
+                                    <a href="nav-link">Law</a>
+                                    <a href="nav-link">Literature & Fiction</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="event.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">About us</a>
+                        </li>
+                    </ul>
+                        <!-- ms-auto -->
+                        <div class="two-center ms-auto d-flex justify-content-center align-items-center">
+                            <div class="track-center d-flex me-4 justify-content-center align-items-center">
+                                <i class="fa-solid fa-star me-2"></i>
+                                <p>Track Order</p>
+                            </div>
+                            <div class="help-center d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-location-dot me-2"></i>
+                                <p>Help Center</p>
+                                <!-- light-dark-mode -->
+                                <span class="material-symbols-outlined ms-4">
+                                    wb_sunny
+                                </span>
+                            </div>
+                        </div> 
+                </div>
+          </nav>
+    </section>
+    <!-- ======================================End Header Area======================================== -->
+
+
+    <!-- ======================================Start promotion Area======================================== -->
+
+    <section class="promotion-area container py-5">
+        <div class="owl-carousel owl-theme">
+            <div class="row promotion-pannel">
+                <div class="col-12 img-div">
+                    <img src="images/dis-1.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="row promotion-pannel">
+                <div class="col-12 img-div">
+                    <img src="images/dis-2.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="row promotion-pannel">
+                <div class="col-12 img-div">
+                    <img src="images/dis-4.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="row promotion-pannel">
+                <div class="col-12 img-div">
+                    <img src="images/dis-5.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="row promotion-pannel">
+                <div class="col-12 img-div">
+                    <img src="images/dis-3.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ======================================End promotion Area======================================== -->
+
+
+    <!-- ======================================Start Book Showcase Area======================================== -->
+
+    <section class="book-showcase-area">
+        <!-- first-showcase -->
+         <div class="container showcase-one">
+            <div class="row">
+                <div class="col-12">
+                    <div class="title-text">
+                        <h1 class="mb-0">Our Best Seller</h1>
+                        <p>This year's best seller</p>
+                    </div>
+                    <div class="col-12 owl-carousel owl-theme">
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-1.jpeg" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>Melania: A Memoir</h6>
+                                <p>Price: <span>$29.33</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card  d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-2.jpeg" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>Untitled 6095</h6>
+                                <p>Price: <span> $22.26</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card  d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-3.jpeg" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>War</h6>
+                                <p>Bob Woodward <br>Price: <span> $22.26</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card  d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-4.jpeg" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>The Last Thing He Told Me</h6>
+                                <p>Price: <span> $22.26</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-5.jpeg" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>The Last Thing He Told Me</h6>
+                                <p>Price: <span> $22.26</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-6.jpeg" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>The Boyfriend</h6>
+                                <p>Freida Mcfadden <br>Price: <span> $13.49</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-7.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>The Body Keep The Score</h6>
+                                <p>Bessel Van Der, M.D <br>Price: <span> $22.26</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-8.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>Never Let Me Go</h6>
+                                <p>Kazuo Ishiguro<br>Price: <span> $6.59</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/Book-9.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>Be Ready When The Luck</h6>
+                                <p>Ina Gartan <br>Price: <span> $25.52</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-10.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>Dune</h6>
+                                <p>Frank Harbet<br>Price: <span> $5.19</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-11.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>The Puspose Drive Life: What</h6>
+                                <p>Rick Warren <br>Price: <span> $4.19</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-12.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>The Battle Field Of The Mind: Winning</h6>
+                                <p>Joyce Meyer<br>Price: <span> $4.09</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-13.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>From Here To The Great Unknown:</h6>
+                                <p>Lisa Marie Presley <br>Price: <span> $24.00</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-14.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>Your Guide To Cellular Health:</h6>
+                                <p>Dr.Mercola<br>Price: <span> $23.30</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-15.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>Educated</h6>
+                                <p>Tara Westover<br>Price: <span> $3.99</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                        
+
+                </div>
+            </div>
+         </div>
+
+         <!-- Second showcase -->
+         <div class="container showcase-two">
+            <div class="row">
+                <div class="col-12">
+                    <div class="title-text">
+                        <h1 class="mb-0">New & Trending</h1>
+                        <p>Latest releases</p>
+                    </div>
+                    <div class="col-12 owl-carousel owl-theme">
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-5.jpeg" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>The Last Thing He Told Me</h6>
+                                <p>Price: <span> $22.26</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-10.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>Dune</h6>
+                                <p>Frank Harbet<br>Price: <span> $5.19</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-1.jpeg" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>Melania: A Memoir</h6>
+                                <p>Price: <span>$29.33</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card  d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-3.jpeg" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>War</h6>
+                                <p>Bob Woodward <br>Price: <span> $22.26</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card  d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-4.jpeg" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>The Last Thing He Told Me</h6>
+                                <p>Price: <span> $22.26</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-6.jpeg" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>The Boyfriend</h6>
+                                <p>Freida Mcfadden <br>Price: <span> $13.49</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-7.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>The Body Keep The Score</h6>
+                                <p>Bessel Van Der, M.D <br>Price: <span> $22.26</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-8.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>Never Let Me Go</h6>
+                                <p>Kazuo Ishiguro<br>Price: <span> $6.59</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/Book-9.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>Be Ready When The Luck</h6>
+                                <p>Ina Gartan <br>Price: <span> $25.52</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-11.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>The Puspose Drive Life: What</h6>
+                                <p>Rick Warren <br>Price: <span> $4.19</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card  d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-2.jpeg" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>Untitled 6095</h6>
+                                <p>Price: <span> $22.26</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-12.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>The Battle Field Of The Mind: Winning</h6>
+                                <p>Joyce Meyer<br>Price: <span> $4.09</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-13.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>From Here To The Great Unknown:</h6>
+                                <p>Lisa Marie Presley <br>Price: <span> $24.00</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-14.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>Your Guide To Cellular Health:</h6>
+                                <p>Dr.Mercola<br>Price: <span> $23.30</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-15.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>Educated</h6>
+                                <p>Tara Westover<br>Price: <span> $3.99</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                        
+
+                </div>
+            </div>
+         </div>
+
+         <!-- Third showcase -->
+         <div class="container showcase-two">
+            <div class="row">
+                <div class="col-12">
+                    <div class="title-text">
+                        <h1 class="mb-0">Best Price Books</h1>
+                        <p>(20%off) - 7 days</p>
+                    </div>
+                    <div class="col-12 owl-carousel owl-theme">
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-13.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>From Here To The Great Unknown:</h6>
+                                <p>Lisa Marie Presley <br>Price: <span> $24.00</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-15.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>Educated</h6>
+                                <p>Tara Westover<br>Price: <span> $3.99</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-6.jpeg" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>The Boyfriend</h6>
+                                <p>Freida Mcfadden <br>Price: <span> $13.49</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-1.jpeg" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>Melania: A Memoir</h6>
+                                <p>Price: <span>$29.33</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card  d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-2.jpeg" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>Untitled 6095</h6>
+                                <p>Price: <span> $22.26</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card  d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-3.jpeg" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>War</h6>
+                                <p>Bob Woodward <br>Price: <span> $22.26</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card  d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-4.jpeg" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>The Last Thing He Told Me</h6>
+                                <p>Price: <span> $22.26</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-5.jpeg" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>The Last Thing He Told Me</h6>
+                                <p>Price: <span> $22.26</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-7.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>The Body Keep The Score</h6>
+                                <p>Bessel Van Der, M.D <br>Price: <span> $22.26</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-8.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>Never Let Me Go</h6>
+                                <p>Kazuo Ishiguro<br>Price: <span> $6.59</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/Book-9.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>Be Ready When The Luck</h6>
+                                <p>Ina Gartan <br>Price: <span> $25.52</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-10.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>Dune</h6>
+                                <p>Frank Harbet<br>Price: <span> $5.19</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-11.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>The Puspose Drive Life: What</h6>
+                                <p>Rick Warren <br>Price: <span> $4.19</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-12.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>The Battle Field Of The Mind: Winning</h6>
+                                <p>Joyce Meyer<br>Price: <span> $4.09</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-14.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>Your Guide To Cellular Health:</h6>
+                                <p>Dr.Mercola<br>Price: <span> $23.30</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        
+
+                </div>
+            </div>
+         </div>
+
+         <!-- Fourth showcase -->
+         <div class="container showcase-two">
+            <div class="row">
+                <div class="col-12">
+                    <div class="title-text">
+                        <h1 class="mb-0">Featured Preorders</h1>
+                    </div>
+                    <div class="col-12 owl-carousel owl-theme">
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-14.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>Educated</h6>
+                                <p>Tara Westover<br>Price: <span> $3.99</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-2.jpeg" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>Untitled 6095</h6>
+                                <p>Price: <span> $22.26</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-1.jpeg" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>Melania: A Memoir</h6>
+                                <p>Price: <span>$29.33</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-8.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>Never Let Me Go</h6>
+                                <p>Kazuo Ishiguro<br>Price: <span> $6.59</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card  d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-3.jpeg" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>War</h6>
+                                <p>Bob Woodward <br>Price: <span> $22.26</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-5.jpeg" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>The Last Thing He Told Me</h6>
+                                <p>Price: <span> $22.26</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-6.jpeg" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>The Boyfriend</h6>
+                                <p>Freida Mcfadden <br>Price: <span> $13.49</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-7.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>The Body Keep The Score</h6>
+                                <p>Bessel Van Der, M.D <br>Price: <span> $22.26</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card  d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-4.jpeg" class="img-fluid" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>The Last Thing He Told Me</h6>
+                                <p>Price: <span> $22.26</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/Book-9.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>Be Ready When The Luck</h6>
+                                <p>Ina Gartan <br>Price: <span> $25.52</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-10.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>Dune</h6>
+                                <p>Frank Harbet<br>Price: <span> $5.19</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-12.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>The Battle Field Of The Mind: Winning</h6>
+                                <p>Joyce Meyer<br>Price: <span> $4.09</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-11.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>The Puspose Drive Life: What</h6>
+                                <p>Rick Warren <br>Price: <span> $4.19</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-13.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>From Here To The Great Unknown:</h6>
+                                <p>Lisa Marie Presley <br>Price: <span> $24.00</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card d-fex flex-column justify-content-justify align-items-center">
+                            <div class="img-div">
+                                <img src="images/book-15.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h6>Educated</h6>
+                                <p>Tara Westover<br>Price: <span> $3.99</span></p>
+                                <div class="button-div d-flex justify-content-center align-items-center">
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        
+
+                </div>
+            </div>
+         </div>
+    </section>
+    <!-- ======================================End Book Showcase Area======================================== -->
+
+
+    <!-- ======================================Start Category Area======================================== -->
+     <section class="category-area">
+        <div class="container">
+            <div class="category-title">
+                <h1 class="mb-0">Most popular Books <br> by categories</h1>
+            </div>
+            <div class="row">
+                <div class="col-12 button-group">
+                    <button id="btn1" data-filter="*" type="button">All</button>
+                    <button data-filter=".romance" type="button">Romance</button>
+                    <button data-filter=".children" type="button">Children's Book</button>
+                    <button data-filter=".history" type="button">History & Politic</button>
+                    <button data-filter=".inspiration" type="button">Inspiration</button>
+                    <button data-filter=".fiction" type="button">Fiction & Fantasy</button>
+                </div>
+            </div>
+
+            <!-- isotope -->
+            <div class="row grid mt-5 d-flex justify-content-center">
+                <div class="col-lg-2 col-md-4 col-sm-6 isotope-item romance history element-item">
+                    <div class="img-div">
+                        <a href="images/book-12.jpeg" class="test-popup-link">
+                            <img src="images/book-12.jpeg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h6>The Battle Field Of <br> The Mind: Winning</h6>
+                        <p class="text-secondary">Romance</p>
+                        <div class="button-div d-flex justify-content-center align-items-center">
+                            <button>Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 isotope-item children element-item">
+                    <div class="img-div">
+                        <a href="images/book-10.jpeg" class="test-popup-link">
+                            <img src="images/book-10.jpeg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h6>Dune</h6>
+                        <p class="text-secondary">Children's book</p>
+                        <div class="button-div d-flex justify-content-center align-items-center">
+                            <button>Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 isotope-item history fiction element-item">
+                    <div class="img-div">
+                        <a href="images/book-8.jpeg" class="test-popup-link">
+                            <img src="images/book-8.jpeg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h6>Never Let Me Go</h6>
+                        <p class="text-secondary">Politic</p>
+                        <div class="button-div d-flex justify-content-center align-items-center">
+                            <button>Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 isotope-item inspiration element-item">
+                    <div class="img-div">
+                        <a href="images/book-6.jpeg" class="test-popup-link">
+                            <img src="images/book-6.jpeg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h6>The Boyfriend</h6>
+                        <p class="text-secondary">Inspiration</p>
+                        <div class="button-div d-flex justify-content-center align-items-center">
+                            <button>Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 isotope-item fiction history element-item">
+                    <div class="img-div">
+                        <a href="images/book-4.jpeg" class="test-popup-link">
+                            <img src="images/book-4.jpeg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h6>The Last Thing <br> He Told Me</h6>
+                        <p class="text-secondary">Fiction</p>
+                        <div class="button-div d-flex justify-content-center align-items-center">
+                            <button>Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 isotope-item romance inspiration element-item">
+                    <div class="img-div">
+                        <a href="images/book-2.jpeg" class="test-popup-link">
+                            <img src="images/book-2.jpeg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h6>Untitled 6095</h6>
+                        <p class="text-secondary">Romance</p>
+                        <div class="button-div d-flex justify-content-center align-items-center">
+                            <button>Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- second row -->
+
+                <div class="col-lg-2 col-md-4 col-sm-6 isotope-item children inspiration element-item">
+                    <div class="img-div">
+                        <a href="images/book-1.jpeg" class="test-popup-link">
+                            <img src="images/book-1.jpeg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h6>Melania: A Memoir</h6>
+                        <p class="text-secondary">Children's book</p>
+                        <div class="button-div d-flex justify-content-center align-items-center">
+                            <button>Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 isotope-item history fiction element-item">
+                    <div class="img-div">
+                        <a href="images/book-3.jpeg" class="test-popup-link">
+                            <img src="images/book-3.jpeg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h6>War</h6>
+                        <p class="text-secondary">Ploitic</p>
+                        <div class="button-div d-flex justify-content-center align-items-center">
+                            <button>Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 isotope-item inspiration children element-item">
+                    <div class="img-div">
+                        <a href="images/book-5.jpeg" class="test-popup-link">
+                            <img src="images/book-5.jpeg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h6>The Last Thing He Told Me</h6>
+                        <p class="text-secondary">Inspiration</p>
+                        <div class="button-div d-flex justify-content-center align-items-center">
+                            <button>Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 isotope-item fiction children element-item">
+                    <div class="img-div">
+                        <a href="images/book-7.jpeg" class="test-popup-link">
+                            <img src="images/book-7.jpeg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h6>The Body Keep The Score</h6>
+                        <p class="text-secondary">Fantasy</p>
+                        <div class="button-div d-flex justify-content-center align-items-center">
+                            <button>Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 isotope-item inspiration romance element-item">
+                    <div class="img-div">
+                        <a href="images/Book-9.jpeg" class="test-popup-link">
+                            <img src="images/Book-9.jpeg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h6>Be Ready When The  Luck</h6>
+                        <p class="text-secondary">Inspiration</p>
+                        <div class="button-div d-flex justify-content-center align-items-center">
+                            <button>Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 isotope-item romance element-item">
+                    <div class="img-div">
+                        <a href="images/book-11.jpeg" class="test-popup-link">
+                            <img src="images/book-11.jpeg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h6>The Puspose Drive Life: What</h6>
+                        <p class="text-secondary">Romance</p>
+                        <div class="button-div d-flex justify-content-center align-items-center">
+                            <button>Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 isotope-item children fiction romance inspiration element-item">
+                    <div class="img-div">
+                        <a href="images/book-12.jpeg" class="test-popup-link">
+                            <img src="images/book-12.jpeg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h6>The Battle Field Of <br> The Mind: Winning</h6>
+                        <p class="text-secondary">Children's book</p>
+                        <div class="button-div d-flex justify-content-center align-items-center">
+                            <button>Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 isotope-item history element-item">
+                    <div class="img-div">
+                        <a href="images/book-13.jpeg" class="test-popup-link">
+                            <img src="images/book-13.jpeg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h6>From Here To The <br> Great Unknown:</h6>
+                        <p class="text-secondary">History</p>
+                        <div class="button-div d-flex justify-content-center align-items-center">
+                            <button>Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 isotope-item romance inspiration history element-item">
+                    <div class="img-div">
+                        <a href="images/book-14.jpeg" class="test-popup-link">
+                            <img src="images/book-14.jpeg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h6>Educated</h6>
+                        <p class="text-secondary">Romance</p>
+                        <div class="button-div d-flex justify-content-center align-items-center">
+                            <button>Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 isotope-item fiction history element-item">
+                    <div class="img-div">
+                        <a href="images/book-15.jpeg" class="test-popup-link">
+                            <img src="images/book-15.jpeg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h6>Educated</h6>
+                        <p class="text-secondary">Fiction</p>
+                        <div class="button-div d-flex justify-content-center align-items-center">
+                            <button>Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+
+             </div>
+        </div>
+     </section>
+    <!-- ======================================End Category Area======================================== -->
+
+
+    <!-- ======================================Start Service Area======================================== -->
+     <section class="service-offer-area container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="service-title">Services We Offer</h1>
+                <p class="service-title-text text-secondary">Customer satisfaction drives us. That's why we've crafted services that go beyond the ordinary—offering reliability, convenience, and a personal touch with every order you place.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-1">
+                <div class="service-card">
+                    <div class="img-div">
+                        <img src="images/delivery-free.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="service-card-content">
+                        <h4>Free Delivery</h4>
+                        <p class="text-secondary">Enjoy the convenience of shopping with us! We offer free delivery on all orders, bringing your favorite products straight to your doorstep without any extra cost.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-1">
+                <div class="service-card">
+                    <div class="img-div">
+                        <img src="images/giftcardfront.webp" class="img-fluid" alt="">
+                    </div>
+                    <div class="service-card-content">
+                        <h4>Gift Cards</h4>
+                        <p class="text-secondary">Surprise your loved ones with a gift card tailored for book enthusiasts. Flexible, easy to use, and perfect for any occasion. Let them choose the stories that captivate their hearts.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-1">
+                <div class="service-card">
+                    <div class="img-div">
+                        <img src="images/reading-club.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="service-card-content">
+                        <h4>Reading Club</h4>
+                        <p class="text-secondary">Expand your horizons with lively discussions, book recommendations, and exclusive events. The Reading Club isn't just about books—it's about building connections.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-1">
+                <div class="service-card">
+                    <div class="img-div d-flex justify-content-center align-items-center">
+                        <img src="images/pre-order.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="service-card-content">
+                        <h4>Book Pre-orders</h4>
+                        <p class="text-secondary">Reserve your copy now and enjoy early access to the most anticipated releases. Pre-order today and never miss out!.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- ======================================End Service Area======================================== -->
+
+
+    <!-- ======================================Start Client Says Area======================================== -->
+
+    <section class="client-say-area container">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="service-title">Clients Say About Us</h1>
+                    <p class="text-secondary client-title-text">Our customers share their stories of joy, discovery, and satisfaction. From prompt service to unmatched book selections, hear how we've made their literary journey special.</p>
+                </div>
+                <div class="owl-carousel owl-theme">
+                    <div class="client-card">
+                        <div class="img-div">
+                            <img src="images/people-9.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="client-card-content">
+                            <h4>Aung Kyaw Moe</h4>
+                            <p>❤️Every time I pre-order, I’m confident it will arrive on time and in perfect condition. They have never let me down!</p>
+                        </div>
+                    </div>
+                    <div class="client-card">
+                        <div class="img-div">
+                            <img src="images/people-10.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="client-card-content">
+                            <h4>May Thandar</h4>
+                            <p>Their book selection is diverse, and the service feels so personal.🤩🤩 It’s like they curated it just for me. I can’t imagine shopping for books anywhere else.</p>
+                        </div>
+                    </div>
+                    <div class="client-card">
+                        <div class="img-div">
+                            <img src="images/people-8.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="client-card-content">
+                            <h4>Kyaw Zin Htun</h4>
+                            <p>I ordered a book as a gift, and the packaging and presentation exceeded my expectations.🍻🙌 My friend loved it, and so did I. Great experience!</p>
+                        </div>
+                    </div>
+                    <div class="client-card">
+                        <div class="img-div">
+                            <img src="images/people-4.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="client-card-content">
+                            <h4>Thandar Win</h4>
+                            <p>😁😁They truly understand what book lovers need! From customized recommendations to on-time delivery🏃‍➡️, every interaction has been a pleasure. Will definitely be returning.</p>
+                        </div>
+                    </div>
+                    <div class="client-card">
+                        <div class="img-div">
+                            <img src="images/people-1.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="client-card-content">
+                            <h4>Nay Lin Aung </h4>
+                            <p>From start to finish, they make sure you feel valued as a customer.🫠🤩 Great selection, seamless ordering, and amazing customer care. I love this service!</p>
+                        </div>
+                    </div>
+                    <div class="client-card">
+                        <div class="img-div">
+                            <img src="images/people-3.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="client-card-content">
+                            <h4>Sanda Hlaing</h4>
+                            <p>I’m always impressed with the attention to detail and care they put into every order. It’s a joy to support such a professional and passionate team.😂😂</p>
+                        </div>
+                    </div>
+                    <div class="client-card">
+                        <div class="img-div">
+                            <img src="images/people-2.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="client-card-content">
+                            <h4>Myo Min Thu</h4>
+                            <p>No matter what I need—recommendations, special orders, or gift ideas—they deliver with precision and care. Truly a trusted name in books.😘😘</p>
+                        </div>
+                    </div>
+                    <div class="client-card">
+                        <div class="img-div">
+                            <img src="images/people-5.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="client-card-content">
+                            <h4>Hnin Nu</h4>
+                            <p>Their service takes all the hassle out of buying books. Great choices, fast delivery,😶‍🌫️🤯 and amazing value. What’s not to love?</p>
+                        </div>
+                    </div>
+                    <div class="client-card">
+                        <div class="img-div">
+                            <img src="images/people-6.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="client-card-content">
+                            <h4>Chan Mya Lwin</h4>
+                            <p>I love how easy they make it to find exactly what I’m looking for. Plus, the customer support is second to none.❤️ Keep up the amazing work!</p>
+                        </div>
+                    </div>
+                    <div class="client-card">
+                        <div class="img-div">
+                            <img src="images/people-7.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="client-card-content">
+                            <h4>Zaw Win Htut</h4>
+                            <p>They make it easy to explore my passion for books. From well-curated collections to reliable delivery,🎉🎉 they’ve thought of everything.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================End Client Says Area======================================== -->
+
+
+    <!-- ======================================Start Email Input Area======================================== -->
+
+    <section class="email-input-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="email-text">
+                        <h1 class="service-title">Get Updates</h1>
+                        <p class="service-title-text">No matter where you are, receive instant updates about your favorite books, events, and special offers!</p>
+                    </div>
+                    <form action="">
+                        <input type="email" name="email" id="Email" placeholder="Email">
+                        <button type="submit">Sumbit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======================================End Email Input Area======================================== -->
+
+
+    <!-- ======================================Start Footer Area======================================== -->
+     <section class="footer-area">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-upper">
+                        <button>
+                            <span>More About Purchasing</span>
+                            <i class="fa fa-chevron-circle-right"></i>
+                        </button>
+                    </div>
+                    <div class="footer-lower">
+
+                        <div class="footer-lower-1">
+                            <p>SAW online book store,</p>
+                            <p>2700 Sin Phyu Shin Street, Hpa-an Township, Kayin State.</p>
+                            <p>
+                                <span>Site Map</span> |
+                                <span>Privacy Policy</span> |
+                                <span>Terms and Conditions</span> |
+                                <span>Refund Policy</span>
+                            </p>
+                            <div class="copyright">
+                                <p>Copyright © SAW online Book Store | <span>Web Desgin <b>Saw Kyi Oo Aung</b> - Amature</span></p>
+                            </div>
+                        </div>
+                        <div class="footer-lower-2">
+                            <h5>Follow Us</h5>
+                            <div class="icons">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-google"></i>
+                            </div>
+                            <div class="img-div">
+                                <img src="images/payment-1.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+     </section>
+    <!-- ======================================End Footer Area======================================== -->
+
+    <!-- ======================================End Area======================================== -->
+     <div class="container-fluid end-area"></div>
+    <!-- ======================================End  Area======================================== -->
+
+
+
+
+
+
+
+
+    
+
+
+    <!-- jQuery cdn -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <!-- bootstrap js cdn -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Isotope Cdn -->
+ <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- Magnic popup cdn -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+ <!-- owl Carousel -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+ <!-- custom main js -->
+<script src="main.js"></script>
+</body>
+</html>

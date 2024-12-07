@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin: 30px;
+            padding: 100px;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .color1 {
+            color: brown;
+
+            /* 
+            Hexa code format
+            0 1 2 3 4 5 6 7 8 9 A B C D E F
+            0 - minimum
+            F - maximum
+            RGB - Red Green Blue
+            0-9A-f 0-9A-f 0-9A-f
+            #00 ff 00
+            ff = 15*16 + 15 = 255
+            cc = 12*15 + 12 = 204
+            88 = 8*16 + 8 = 136
+            00 = 0
+            
+            #ffffff => white - #fff
+            #000000 => Black - #000
+            #888888 => Gray - #888
+            #00ff00 => Green
+            #ff0000 => Red
+            #0000ff => blue
+            */
+            background-color: #888;
+        }
+
+        .color2 {
+            /* 
+            rgb (red, green , blue)
+            rgb (red, green , blue, alpha)
+            0 - 255
+            alpha - 0 - 1
+            background-color: rgb(0, 100, 100); */
+            background-color: rgba(255,0 ,0, 0.6);
+        }
+
+        .color3 {
+            /* 
+            0deg = to top
+            90deg = to right
+            180deg = to bottom
+            270deg = to left
+            45deg = to top right
+            135deg = to bottom right
+            225deg = to bottom left
+            315deg = to top left
+            */
+            background: linear-gradient(to bottom right, red, blue);
+        }
+    </style>
+</head>
+<body>
+    <div class="color1">color1</div>
+    <div class="color2">color2</div>
+    <div class="color3">color3</div>
+</body>
+</html>
