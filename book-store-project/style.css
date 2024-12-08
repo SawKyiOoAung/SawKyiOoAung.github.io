@@ -23,8 +23,8 @@
     --input-transparency-light: rgba(0,0 , 0, 0.7);
     --input-transparency-dark: rgba(89, 78, 78, 0.5);
     --box-color: #759ac930;
-
-    --gradient-color: linear-gradient(90deg, #003B96 0%, #4f77b8 100%);
+    /* box */
+    
 }
 
 body {
@@ -101,7 +101,6 @@ body {
 .email-input-1, .password-input {
     display: flex;
 }
-
 .email-input-1 input,.password-input input {
     border: 1px solid var(--light-mode);
     background-color: var(--accent-color);
@@ -468,6 +467,12 @@ body {
     font-weight: 600;
 }
 
+.book-showcase-area .owl-carousel .book-card .card-content p span:nth-of-type(2) {
+    text-decoration: line-through;
+    color: #FF515B;
+    margin-left: 0.2rem;
+}
+
 .book-showcase-area .owl-carousel .book-card .card-content p span:hover {
     color: var(--secondary-color)
 }
@@ -501,6 +506,13 @@ body {
 
 .category-area {
     margin-top: 3rem;
+    padding: 0rem 2rem;
+}
+
+.category-area .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .category-area .category-title h1 {
@@ -588,6 +600,7 @@ body {
 .service-offer-area .service-card .img-div {
     height: 8rem;
     overflow: hidden;
+    border-radius: 1rem;
     /* background-color: red; */
 }
 
@@ -616,6 +629,7 @@ body {
     flex-direction: column;
     justify-content: justify;
 }
+
 
 /* Client Say area */
 
@@ -701,6 +715,7 @@ body {
     border: 2px solid var(--light-mode);
     background-color: var(--accent-color);
     width: 24rem;
+    max-width: 24rem;
     height: 2.2em;
     opacity: 0.8;
     padding: 1em;
@@ -832,6 +847,117 @@ body {
     background-color: var(--light-mode);
 }
 
+/* Cookie area */
+
+.cookie-area {
+    position: fixed;
+    z-index: 99;
+    bottom: -30rem;
+    width: 100vw;
+    box-shadow: var(--box-shadow);
+    transition: all 0.6s ease-in-out;
+}
+
+.cookie-area .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: 1rem 3rem 0.5rem;
+}
+
+.cookie-area .container-fluid p {
+    max-width: 75%;
+    color: var(--light-mode);
+}
+
+.cookie-area .container-fluid p span {
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.cookie-area .cookie-button a {
+    display: inline-block;
+}
+
+.cookie-area .cookie-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cookie-area .cookie-button a {
+    color: var(--light-mode);
+}
+
+.cookie-area .cookie-button a:nth-child(2) {
+    padding: 0.5rem 1rem;
+    background-color: var(--light-mode);
+    color: var(--secondary-color);
+    margin-left: 1rem;
+    text-decoration: none;
+    border-radius: 1rem;
+    border: 2px solid var(--secondary-color);
+    text-align: center;
+}
+
+.cookie-area .cookie-button a:nth-child(2):hover {
+    background-color: var(--secondary-color);
+    color: var(--light-mode);
+    border: 2px solid var(--light-mode);
+}
+
+/* Cart Area */
+
+.cart-area {
+    position: fixed;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    bottom: 2rem;
+    left: 89rem;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--light-mode);
+    cursor: pointer;
+}
+
+.cart-area i {
+    font-size: 1.5rem;
+}
+
+.cart-area span {
+    padding: 0.3rem;
+    position: relative;
+    bottom: 1rem;
+    border-radius: 50%;
+    background-color: var(--light-mode);
+    color: var(--accent-color);
+    width: 1.3rem;
+    height: 1.3rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    user-select: none;
+}
+
+
+/* Header -menu area */
+
+.header-menu-area {
+    display: none;
+}
+
+.header-menu-area a {
+    text-decoration: none;
+    color: var(--dark-mode);
+}
+ 
 /* =============================Book Review page ======================*/
 
 /* Hidden nav area */
@@ -1141,8 +1267,8 @@ th,td {
 
 .upcoming-event-area .upcoming-event-card {
     z-index: 2;
+    max-width: 58rem;
     background-color: var(--light-mode);
-    width: 58rem;
     padding: 2rem;
     margin: 3.5rem 10rem 4rem 2rem;
     background-color: var(--light-mode);
@@ -1515,6 +1641,12 @@ input:focus {
 
 @media (max-width: 1024px) {
 
+    /* Login-form-overlay */
+
+    .login-form-content {
+        margin: 12rem 15rem;
+    }
+
     /* Header area */
 
 
@@ -1627,12 +1759,70 @@ input:focus {
         padding: 0rem 4rem;
     }
 
+    /* Header menu area */
 
+    .header-menu-area {
+        display: block;
+        background-color: red;
+        width: 100%;
+        height: 100vh;
+        max-width: 19rem;
+        position: fixed;
+        left: -20rem;
+        top: 0;
+        z-index: 999;
+        padding: 1rem 1rem;
+        background-color: var(--light-mode);
+        box-shadow: var(--box-shadow);
+        transition: all 0.6s ease-in-out;
+    }
+
+    .header-menu-area  p {
+        margin-bottom: 0rem;
+    }
+
+    .header-menu-area .first-div i, .second-div i {
+        font-size: 1.2rem;
+    }
+
+    .header-menu-area .first-div span {
+        display: inline-block;
+        margin-left: 1rem;
+    }
+
+    .header-menu-area .second-div, .third-div, .fourth-div {
+        margin-bottom: 3.5rem;
+    }
+
+    .header-menu-area .first-div {
+        justify-content: space-between !important;
+        margin-bottom: 2.5rem;
+        padding: 1rem 0rem;
+    }
+
+    .header-menu-area .first-div i:last-child {
+        font-size: 1.5rem;
+    }
+
+    .header-menu-area .second-div div, .third-div div, .third-div div, .fourth-div div {
+        margin: 1.5rem 0rem;
+    }
+
+    .header-menu-area .second-div i {   
+        margin-right: 1.5rem;
+        margin-left: 0.5rem;
+    }
 
     
 }
 
 @media (max-width: 768px) {
+
+    /* Login-form-overlay */
+
+    .login-form-content {
+        margin: 5.5rem 10rem;
+    }
 
     /* Category-area */
 
@@ -1656,6 +1846,7 @@ input:focus {
 
     .service-offer-area .service-card .service-card-content {
         margin-top: 0.7rem;
+        padding: 0rem 1.5rem;
     }
 
     /* Client says area */
@@ -1679,9 +1870,78 @@ input:focus {
     .footer-area .footer-upper button span {
         font-size: 1rem;
     }
+
+    /* Header menu area */
+
+    .header-menu-area {
+        display: block;
+        background-color: red;
+        width: 100%;
+        height: 100vh;
+        max-width: 17rem;
+        position: fixed;
+        left: -20rem;
+        top: 0;
+        z-index: 999;
+        padding: 1rem 1rem;
+        background-color: var(--light-mode);
+        box-shadow: var(--box-shadow);
+        transition: all 0.6s ease-in-out;
+    }
+
+    .header-menu-area  p {
+        margin-bottom: 0rem;
+    }
+
+    .header-menu-area .first-div i, .second-div i {
+        font-size: 1.2rem;
+    }
+
+    .header-menu-area .first-div span {
+        display: inline-block;
+        margin-left: 1rem;
+    }
+
+    .header-menu-area .second-div, .third-div, .fourth-div {
+        margin-bottom: 3.5rem;
+    }
+
+    .header-menu-area .first-div {
+        justify-content: space-between !important;
+        margin-bottom: 2.5rem;
+        padding: 1rem 0rem;
+    }
+
+    .header-menu-area .first-div i:last-child {
+        font-size: 1.5rem;
+    }
+
+    .header-menu-area .second-div div, .third-div div, .third-div div, .fourth-div div {
+        margin: 1.5rem 0rem;
+    }
+
+    .header-menu-area .second-div i {   
+        margin-right: 1.5rem;
+        margin-left: 0.5rem;
+    }
+
+    /* cookie area */
+
+    .cookie-area .container-fluid {
+        flex-direction: column;
+    }
+
 }
 
 @media (max-width: 426px) {
+
+    /* Login-form-overlay */
+
+    .login-form-content {
+        margin: 6rem 3rem;
+        padding: 2rem;
+    }
+
 
     /* Header area */
 
@@ -1753,7 +2013,6 @@ input:focus {
         margin: 0rem 0.2rem;
         border-radius: 2rem;
         margin: 0rem 3rem;
-        background-color: var(--secondary-color);
     }
 
     .client-say-area .client-card-content {
@@ -1812,9 +2071,22 @@ input:focus {
         margin-top: 2rem;
     } 
 
+    /* Cookie area */
+
+    .cookie-area .container-fluid {
+        padding: 0.5rem 0.5rem 0.2rem;
+    }
+
 }
 
 @media (max-width: 376px) {
+
+    /* Login-form-overlay */
+
+    .login-form-content {
+        margin: 5rem 1.5rem;
+        padding: 2rem;
+    }
     
     /* Header area */
 
@@ -1876,9 +2148,20 @@ input:focus {
     .footer-area {
         padding: 0rem 0.3rem;
     }
+
+    /* Header menu area */
+
+    .header-menu-area {
+        max-width: 15rem;
+    }
 }
 
 @media (max-width: 321px) {
+
+    .login-form-content {
+        margin: 4.5rem 1.5rem;
+        padding: 2rem;
+    }
 
     /* Client says area */
 
@@ -1896,6 +2179,14 @@ input:focus {
         margin: 0rem;
         border-radius: 2rem;
         margin: 0rem 0.4rem;
+    }
+
+    /* service offer area */
+
+    .service-offer-area .service-card {
+        padding: 1rem 0.1rem;
+        height: 27rem;
+        margin: 1rem 2rem;
     }
 
     /* Email-input area */
@@ -1917,17 +2208,18 @@ input:focus {
         width: 18rem;
     }
 
+    /* cookie area */
 
+    .cookie-area .cookie-button a:nth-child(2) {
+        padding: 0.2rem 0.4rem;
+        text-align: center;
+    }
 }
 
 /* ----------------------------event.html - responsive------------------------------- */
 
 @media (max-width: 768px) {
-    /* Upcoming-event area */
 
-    .upcoming-event-area .upcoming-event-card {
-        width: 42rem;
-    }
 
     /* Popular event area */
 
@@ -1953,8 +2245,8 @@ input:focus {
         height: 17rem;
     }
 
-    .upcoming-event-area .upcoming-event-card {
-        display: none;
+    .upcoming-event-area .upcoming-display-none {
+        display: none !important;
     }
 
     .upcoming-event-area .upcoming-display {
@@ -2115,6 +2407,20 @@ input:focus {
         padding: 2rem;
     }
 
+    /* upcoming-event area */
+
+    .upcoming-event-area .upcoming-display-none {
+        display: none !important;
+    }
+
+    .upcoming-event-area .upcoming-display {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem 2rem;
+    }
+
     /* why client chose us area */
     .why-client-chose-area {
         margin-top: 3rem;
@@ -2235,6 +2541,13 @@ input:focus {
 }
 
 @media (max-width: 376px) {
+    /* Hidden nav area */
+
+    .hidden-nav-area {
+        display: none;
+    }
+
+
     /* Hidden nav  */
 
     .hidden-nav {
@@ -2243,9 +2556,11 @@ input:focus {
 
      /* first left div */
 
-     .pannel-area .left-pannel .first-left-pannel .img-div img {
-        transform: scale(1.5);
-     }
+    .pannel-area .left-pannel .first-left-pannel .img-div img {
+    transform: scale(1.5);
+    }
+
+
 }
 
 

@@ -6,22 +6,75 @@
     
     <!-- Bootstrap cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+    
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/af12da7f42.js" crossorigin="anonymous"></script>
 
     <!-- google material icon -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    
 
+    <!-- Magnific popup cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+  
     <!-- owl Carousel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- custom css -->
+    <!-- custom-css -->
     <link rel="stylesheet" href="style.css">
     <title>SAW: Book Review / P</title>
 </head>
 <body>
+
+    <div class="over-lay"></div>
+
+    <!-- login-form-overlay -->
+    <div class="login-form-overlay">
+        <div class="login-form-content">
+            <div class="x-mark">
+                <div></div>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="login-content-title">
+                <h1 class="mb-0">SAW</h1>
+                <p>Sign in or Create an Account</p>
+            </div>
+            <form action="">
+                <div class="email-input-1">
+                    <input type="email" name="email" id="email" placeholder="Email Address">
+                    <button>
+                        <i class="fa-solid fa-user"></i>
+                    </button>
+                </div> 
+
+                <div class="password-input">
+                    <input type="password" name="password" id="password" placeholder="Password">
+                    <button>
+                        <i class="fa-regular fa-eye"></i>
+                    </button>
+                </div>
+
+                <div class="remember-me d-flex justify-content-between align-items-center">
+                    <div class="remember-me-right">
+                        <input type="checkbox" name="" id="">
+                        <label for="">Remember me</label>
+                    </div>
+                    <div class="remember-me-left" style="text-align: end;">
+                        <span>Fogot your password?</span>
+                    </div>
+                </div>
+
+                <div class="create-an-account">
+                    <button>Sign In & Continue</button>
+                    <button>Create an Account</button>
+                </div>
+
+                <p class="agreeing-term">By signing in you are agreeing to our <br> <span>Terms of Use</span> and our <span>Privacy.</span></p>
+            </form>
+
+        </div>
+    </div>
 
     <!-- hidden nav link -->
     <section class="hidden-nav-area">
@@ -42,7 +95,7 @@
                 </div>
 
                 <div class="add-to-cart-button">
-                    <button>Add to cart</button>
+                    <button class="button-add">Add to cart</button>
                     <button>Buy Now</button>
                 </div>
                 
@@ -55,7 +108,7 @@
         <!-- nav 1 -->
         <nav class="navbar navbar-expand-lg nav1">
             <div class="container-fluid d-flex justify-content-spacebetween align-items-center">
-                <a class="navbar-brand me-5" href="#">
+                <a class="navbar-brand me-5 d-flex" href="#">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -259,7 +312,7 @@
                         </div>
     
                         <div class="add-to-cart-button">
-                            <button>Add to cart</button>
+                            <button class="button-add">Add to cart</button>
                             <button>Buy Now</button>
                         </div>
     
@@ -310,7 +363,8 @@
             <div class="row">
                 <div class="col-12">
                     <div class="title-text">
-                        <h1 class="mb-5">Similar Products</h1>
+                        <h1 class="mb-1">Similar Products</h1>
+                        <p class="text-secondary text-center">Explore Related Picks Here!</p>
                     </div>
                     <div class="col-12 owl-carousel owl-theme">
                         <div class="book-card d-fex flex-column justify-content-justify align-items-center">
@@ -553,15 +607,85 @@
      <div class="container-fluid end-area"></div>
     <!-- ======================================End  Area======================================== -->
 
+    <!-- =======================================Start Cart Area========================================= -->
+    <div class="cart-area">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span>0</span>
+     </div>
+    <!-- =======================================End Cart Area========================================= -->
+
+    <!-- ============================================== Start Header-menu=================================-->
+    <section class="header-menu-area">
+        <div class="first-div d-flex justify-content-spacebetween align-items-center">
+            <div class="d-flex hello">
+                <i class="fa-regular fa-user"></i>
+                <span>Hello, Sign in</span>
+            </div>
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="second-div">
+            <div>
+                <i class="fa-regular fa-heart"></i>
+                <span>Whishlist</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-box-open"></i>
+                <span>Track Order</span>
+            </div>
+            <div>
+                <i class="fa-regular fa-circle-question"></i>
+                <span>Contact us</span>
+            </div>
+        </div>
+        <div class="third-div">
+            <div class="d-flex justify-content-between align-items-center">
+                <p><a href="index.html">Home</a></p>
+                <p><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <p><a href="event.html">Events</a></p>
+                <p><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <p><a href="about-us.html">About us</a></p>
+                <p><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+            
+        </div>
+        <div class="fourth-div">
+            <div class="d-flex justify-content-between">
+                <p class="mb-0">Shop by category</p>
+                <p class="mb-0" style="text-decoration: underline;">See All</p>
+            </div>
+            <div>My account</div>
+            <div>Book Depository Myanmar Shop</div>
+            <div>Whishlist</div>
+            <div class="d-flex justify-content-between">
+                <p>Privacy Policy</p>
+                <p><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+        </div>
+     </section>
+    <!-- ==============================================End Header-menu=================================-->
+
     
 
-<!-- jQuery cdn -->
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <!-- jQuery cdn -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-<!-- owl Carousel -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- bootstrap js cdn -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-<!-- custom main js -->
-<script src="main2.js"></script>
+  <!-- Isotope Cdn -->
+ <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- Magnic popup cdn -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+ <!-- owl Carousel -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+ <!-- custom main js -->
+<script src="main.js"></script>
 </body>
 </html>

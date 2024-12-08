@@ -3,19 +3,11 @@ $(document).ready(function() {
 
     //getfrom local storage
     let $bookData = JSON.parse(localStorage.getItem('bookData'));
-    let $themeData = parseInt(localStorage.getItem('themeData'), 10);
 
     //light-dark mode 
     let count = 1;
-    if ($themeData) {
-        count = $themeData.$themeData
-    }
-    if ($bookData) {
-        count = $bookData.lightDark;
-    }
-    console.log(count);
 
-    function darkModeFunction() {
+    function darkModeFunction3() {
         $('.end-area, body, .upcoming-event-card, .movement-area input')
             .css('background-color', 'var(--dark-mode'),
 
@@ -66,7 +58,7 @@ $(document).ready(function() {
                 'box-shadow': 'var(--box-shadow-for-dark)'
             })
     }
-    function lightModeFunction() {
+    function lightModeFunction3() {
         $('.end-area, body, .upcoming-event-card, .movement-area input')
             .css('background-color', 'var(--light-mode'),
 
@@ -121,26 +113,15 @@ $(document).ready(function() {
             })
     }
 
-    if (count == 1) {
-        lightModeFunction();
-        console.log('light mode');
-        count = 0;
-        
-    } else {
-        darkModeFunction();
-        console.log('dark mode');
-        count = 1;
-    }
-
     $('.material-symbols-outlined').on('click', function() {
         if (count == 1) { // Dark Mode
 
-            darkModeFunction();
+            darkModeFunction3();
             count = 0;
         }
         else {  //Light Mode
 
-            lightModeFunction();
+            lightModeFunction3();
             count = 1;
         }
     })
@@ -173,6 +154,27 @@ $(document).ready(function() {
             'display': 'flex'
         })
     })
+
+    // Header menu area 
+    $('.header-menu-area .first-div i:last-child').on('click',
+        function() {
+            $('.header-menu-area').css({
+                'left': '-20rem',
+            })
+            $('.over-lay').css('display', 'none')
+            .fadeOut(1000);
+        }
+    )
+
+    $('.navbar-toggler').on('click',
+        function() {
+            $('.header-menu-area').css({
+                'left': '0rem',
+            })
+            $('.over-lay').css('display', 'block')
+            .fadeIn(1000)
+        }
+    )
 
     
 })

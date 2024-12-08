@@ -1,9 +1,4 @@
 $(document).ready(function() {
-
-    //getfrom local storage
-    let $bookData = JSON.parse(localStorage.getItem('bookData'));
-    let $themeData = parseInt(localStorage.getItem('themeData'), 10);
-    console.log($themeData)
     
     //update img 
     if ($bookData) {
@@ -17,15 +12,8 @@ $(document).ready(function() {
 
     //light-dark mode 
     let count = 1;
-    if ($bookData) {
-        count = $bookData.lightDark;
-    }
-    if ($themeData) {
-        count = $themeData.$themeData
-    }
-    console.log(count);
 
-    function darkModeFunction () {
+    function darkModeFunction2 () {
         $('.end-area, body, .upcoming-event-card, .movement-area input, .hidden-nav')
            .css('background-color', 'var(--dark-mode'),
         
@@ -95,8 +83,7 @@ $(document).ready(function() {
                    })
                })
     }
-
-    function lightModeFunction () {
+    function lightModeFunction2 () {
         $('.end-area, body, .upcoming-event-card, .movement-area input, .hidden-nav')
            .css('background-color', 'var(--light-mode'),
 
@@ -158,31 +145,21 @@ $(document).ready(function() {
                })
     }
 
-    if (count == 1) {
-        lightModeFunction();
-        console.log('light mode');
-        count = 0;
-        
-    } else {
-        darkModeFunction();
-        console.log('dark mode');
-        count = 1;
-    }
-
     $('.material-symbols-outlined').on('click', function() {
         if (count == 1) { // Dark Mode
 
-           darkModeFunction();
+           darkModeFunction2();
            count = 0;
         }
         else { // Light Mode
 
-            lightModeFunction();
+            lightModeFunction2();
             count = 1;
         }
     });
 
-
+    //getfrom local storage
+    let $bookData = JSON.parse(localStorage.getItem('bookData'));
 
     // direct link
     $('.card-content h6').on('click', function () {
@@ -259,8 +236,6 @@ $(document).ready(function() {
             }
         }
     });
-
-    
 
     
 })
