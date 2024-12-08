@@ -41,6 +41,28 @@ body {
     animation: all 0.4s ease-in-out
 }
 
+/* hidden nav for 1024 area */
+
+.hidden-nav-for-px {
+    background-color: var(--accent-color);
+    padding: 0rem 2rem;
+    position: fixed;
+    top: -10rem;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    z-index: 70;
+    box-shadow: var(--box-shadow);
+}
+
+.magnify-and-cart {
+    gap: 1.5rem;
+    color: var(--light-mode);
+}
+
+.magnify-and-cart i:first-of-type {
+    font-size: 1.4rem;
+}
+
 /* login-form-overlay */
 
 .login-form-overlay {
@@ -219,13 +241,14 @@ body {
 /* nav1 */
 
 .header-area .nav1 {
-    padding: 1.1rem 10rem;
+    padding: 1.1rem 10rem; z-index: 700;
 }
 
-.header-area .navbar .navbar-brand .saw {
+.navbar .navbar-brand .saw {
     color: var(--light-mode);
     font: normal 600 40px/ 22px var(--roboto);
     letter-spacing: 0.3rem;
+    margin-bottom: 0rem !important;
 }
 
 .header-area .navbar form .form-control {
@@ -579,6 +602,7 @@ body {
     overflow: hidden;
 }
 
+
 /* Service offer area */
 
 .service-offer-area {
@@ -852,7 +876,7 @@ body {
 .cookie-area {
     position: fixed;
     z-index: 99;
-    bottom: -30rem;
+    bottom: -100rem;
     width: 100vw;
     box-shadow: var(--box-shadow);
     transition: all 0.6s ease-in-out;
@@ -1641,6 +1665,12 @@ input:focus {
 
 @media (max-width: 1024px) {
 
+    /* hidden nav for 1024 area */
+
+    .hidden-nav-for-px {
+        display: block;
+    }
+
     /* Login-form-overlay */
 
     .login-form-content {
@@ -1667,7 +1697,7 @@ input:focus {
         color: var(--light-mode) !important;
     }
 
-    .header-area .navbar .navbar-brand .saw {
+    .navbar .navbar-brand .saw {
         margin-bottom: 0.5rem;
     }
 
@@ -1774,7 +1804,7 @@ input:focus {
         padding: 1rem 1rem;
         background-color: var(--light-mode);
         box-shadow: var(--box-shadow);
-        transition: all 0.6s ease-in-out;
+        transition: all 0.4s ease-in-out;
     }
 
     .header-menu-area  p {
@@ -1935,6 +1965,28 @@ input:focus {
 
 @media (max-width: 426px) {
 
+
+    /* hidden nav for 1024 area */
+
+    .hidden-nav-for-px {
+        padding: 0rem 0.2rem;
+    }
+
+    .magnify-and-cart {
+        gap: 0.8rem;
+        color: var(--light-mode);
+    }
+
+    .hidden-nav-for-px .navbar-toggler {
+        margin-right: 0.3rem;
+    }
+
+    /* header area */
+
+    .navbar .navbar-brand .saw {
+        font: normal 600 35px/ 20px var(--roboto);
+    }
+
     /* Login-form-overlay */
 
     .login-form-content {
@@ -1949,7 +2001,7 @@ input:focus {
         padding: 0.9rem 0.6rem;
     }
 
-    .header-area .navbar .navbar-brand .saw {
+    .navbar .navbar-brand .saw {
         font-size: 35px;
     }
 
@@ -2081,6 +2133,18 @@ input:focus {
 
 @media (max-width: 376px) {
 
+    /* hidden nav for 1024 area */
+
+    .magnify-and-cart i:first-of-type {
+        font-size: 1.2rem;
+    }
+
+    /* header area */
+
+    .navbar .navbar-brand .saw {
+        font: normal 600 32px/ 19px var(--roboto);
+    }
+
     /* Login-form-overlay */
 
     .login-form-content {
@@ -2157,6 +2221,12 @@ input:focus {
 }
 
 @media (max-width: 321px) {
+
+    /* hidden nav for 1024 area */
+
+    .hidden-nav-for-px {
+        padding: 0rem 0.08rem;
+    }
 
     .login-form-content {
         margin: 4.5rem 1.5rem;

@@ -141,6 +141,20 @@ $(document).ready(function() {
     }
    })
 
+    // sticky hidden nav for 1024 px
+
+    let header_position1 = $('.header-area').offset().top + 450
+    $(window).scroll(function () {
+
+        let scrollValue = $(window).scrollTop();
+        if (scrollValue > header_position1) {
+            $('.hidden-nav-for-px').css({
+                'top': '0',
+            })
+        }
+        
+    })
+
    // x-mark close-open
    $('.x-mark').on('click', function () {
     $('.login-form-overlay').css({
@@ -149,7 +163,7 @@ $(document).ready(function() {
 })
 
     //login-form
-    $('.header-area .navbar .user-login').on('click', function () {
+    $('.header-area .navbar .user-login, .header-menu-area .hello').on('click', function () {
         $('.login-form-overlay').css({
             'display': 'flex'
         })

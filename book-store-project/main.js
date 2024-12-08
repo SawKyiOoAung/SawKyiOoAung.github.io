@@ -6,7 +6,7 @@ $(document).ready(function() {
 
     if ($getCookie) {
         $('.cookie-area').css({
-            'bottom': '-30rem',
+            'bottom': '-100rem',
         })
     } else {
 
@@ -677,6 +677,21 @@ $(document).ready(function() {
 
     console.log('hi4')
     }
+
+    // sticky hidden nav for 1024 px
+
+    let header_position1 = $('.header-area').offset().top + 450
+    $(window).scroll(function () {
+
+        let scrollValue = $(window).scrollTop();
+        if (scrollValue > header_position1) {
+            $('.hidden-nav-for-px').css({
+                'top': '0',
+            })
+        }
+        
+    })
+
 
     console.log('hi1')
 
