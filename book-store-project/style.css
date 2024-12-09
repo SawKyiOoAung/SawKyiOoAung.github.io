@@ -52,6 +52,7 @@ body {
     width: 100%;
     z-index: 70;
     box-shadow: var(--box-shadow);
+    display: none;
 }
 
 .magnify-and-cart {

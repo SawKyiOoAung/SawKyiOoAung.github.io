@@ -177,7 +177,7 @@ $(document).ready(function() {
             })
 
             // box-shadow
-            $('.book-showcase-area .owl-carousel .book-card, .category-area .element-item').css({
+            $('.book-showcase-area .owl-carousel .book-card, .category-area .element-item, .service-offer-area .service-card').css({
                 'box-shadow': 'var(--box-shadow-for-dark)'
             })
     }
@@ -254,7 +254,7 @@ $(document).ready(function() {
             })
 
             // box-shadow
-            $('.book-showcase-area .owl-carousel .book-card, .category-area .element-item').css({
+            $('.book-showcase-area .owl-carousel .book-card, .category-area .element-item, .service-offer-area .service-card').css({
                 'box-shadow': 'var(--box-shadow)'
             })
     }
