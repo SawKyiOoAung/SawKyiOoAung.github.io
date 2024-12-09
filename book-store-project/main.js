@@ -103,7 +103,7 @@ $(document).ready(function() {
     let count = 1;
 
     function darkModeFunction1 () {
-        $('.two-center .help-center .material-symbols-outlined').text('dark_mode'),
+        $('.material-symbols-outlined').text('dark_mode'),
 
             $('.end-area, body, .category-area .button-group button')
             .css('background-color', 'var(--dark-mode'),
@@ -182,7 +182,7 @@ $(document).ready(function() {
             })
     }
     function lightModeFunction1 () {
-        $('.two-center .help-center .material-symbols-outlined').text('wb_sunny'),
+        $('.material-symbols-outlined').text('wb_sunny'),
 
             $('.end-area, body, .category-area .button-group button')
             .css('background-color', 'var(--light-mode'),

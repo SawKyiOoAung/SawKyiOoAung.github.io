@@ -8,6 +8,8 @@ $(document).ready(function() {
     let count = 1;
 
     function darkModeFunction3() {
+        $('.material-symbols-outlined').text('dark_mode'),
+
         $('.end-area, body, .upcoming-event-card, .movement-area input')
             .css('background-color', 'var(--dark-mode'),
 
@@ -59,6 +61,8 @@ $(document).ready(function() {
             })
     }
     function lightModeFunction3() {
+        $('.material-symbols-outlined').text('wb_sunny'),
+
         $('.end-area, body, .upcoming-event-card, .movement-area input')
             .css('background-color', 'var(--light-mode'),
 
