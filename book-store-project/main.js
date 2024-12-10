@@ -351,6 +351,7 @@ $(document).ready(function() {
            $('.add-to-cart-button button:nth-child(2)').css({
                'color': 'var(--secondary-color)',
                'border': '2px solid var(--secondary-color)',
+               'background-color': 'var(--light-mode)',
            }),
 
            //button hover 
@@ -386,6 +387,7 @@ $(document).ready(function() {
                    $(this).css({
                        'color': 'var(--secondary-color)',
                        'border': '2px solid var(--secondary-color)',
+                       'background-color': 'var(--light-mode)'
                    })
                })
     }
