@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+    // prevent-button 
+    
+    $('button').on('click', function (event) {
+        event.preventDefault()
+    } ) //<i class="fa-regular fa-eye-slash"></i>
+
     // User Cookie
 
     let $getCookie = localStorage.getItem('cookie'); //getCookie
@@ -86,12 +92,13 @@ $(document).ready(function() {
     })
 
     //getfrom local storage
-    let $bookData = JSON.parse(localStorage.getItem('bookData'));
-
-    console.log($bookData)
-    console.log($bookData.imgSrc, 'hi')
+    $bookData = JSON.parse(localStorage.getItem('bookData'));
 
     if ($bookData) {
+
+        console.log($bookData)
+        console.log($bookData.imgSrc, 'hi')
+
         $('.hidden-nav-left img, .first-left-pannel img').attr('src', $bookData.imgSrc)
         $('.hidden-div-content p:first-child span, .first-right-pannel h4 span h4').text($bookData.bookTitle)
         $('.first-right-pannel .price, .span-1').text($bookData.bookPrice)
@@ -696,13 +703,6 @@ $(document).ready(function() {
 
 
     console.log('hi1')
-
-    // prevent-button 
-    
-    $('button').on('click', function (event) {
-        event.preventDefault()
-    } ) //<i class="fa-regular fa-eye-slash"></i>
-
 
     //close-open eye
     let eye = 1
