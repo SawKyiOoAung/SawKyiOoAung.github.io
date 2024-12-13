@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        //Array
+
+        // [] or Array()
+        let arr = [1,2,3,'a','b','c'];
+        console.log(arr);
+        console.log(arr[4]);
+        let arr1 = Array('aa', 'bb', 'cc', 11, 22, 33);
+        conosole.log(arr1)
+        conosole.log(arr1[3])
+        let arr2 = ['Mg Mg', 'Mandalay', 32, 34, ['Yangon', 'Mandaly', 'Taungyi']];
+        console.log(arr2)
+        console.log(arr2[4][2]);
+
+        let fruits = [];
+        fruits[0] = 'Apple';
+        fruits[1] = 'Orange';
+        fruits[2] = 'Banana';
+        console.log(fruits);
+
+        fruits.push('Mango'); //Adding at the end of an array
+        console.log(fruits);
+
+        fruits.unshif('Cherry'); //Adding at the start of an array
+        console.log(fruits);
+
+        fruits.pop();
+        console.log(fruits);
+
+        fruits.shift()
+        console.log(fruits);
+
+        console.log(fruits.sort());
+        console.log(fruits.reverse());
+
+        let fruits_str = fruits.toString();
+        console.log(fruits_str);
+        console.log(typeof(fruits_str));
+
+        fruits = fruits_str.split(',');
+        console.log(fruits);
+        let str = "Mg Mg";
+        arr3 = str.split(' ');
+        console.log(arr3);
+
+        
+</script>
+</body>
+</html>

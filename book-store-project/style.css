@@ -935,12 +935,19 @@ body {
 
 /* Cart Area */
 
+.cart-area-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: sticky;
+    bottom: 2.5rem;
+    z-index: 9000;
+}
+
 .cart-area {
-    position: fixed;
     border-radius: 50%;
     background-color: var(--accent-color);
-    bottom: 2rem;
-    left: 89rem;
+    margin-right: 2rem;
     width: 4rem;
     height: 4rem;
     display: flex;
