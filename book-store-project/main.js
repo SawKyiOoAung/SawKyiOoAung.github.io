@@ -20,7 +20,7 @@ $(document).ready(function() {
             localStorage.setItem('cookie', $cookie) //storecookie
     
             $('.cookie-area').css({
-                'bottom': '-7rem',
+                'bottom': '-50rem',
             })
         })
     }
