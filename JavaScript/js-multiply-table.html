@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiply table</title>
+</head>
+
+<style>
+
+* {
+    padding: 0;
+    margin: 0;
+}
+    
+body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 4rem;
+        background-color: rgb(150, 168, 185);
+    }
+
+h3 {
+    margin: 2rem 0rem;
+}
+
+h4 {
+    margin-bottom: 2rem;
+}
+</style>
+<body>
+    
+    <script>
+        //*****
+        //****
+        //***
+        //**
+        //*
+
+        for (let i = 0; i < 5; i++) {
+            for (let j = 0; j < 5 - i; j++) {
+                document.write(`*`)
+            }
+            document.write('<br>')
+        }
+
+        number = prompt("Enter a number for the multiply table: ")
+        upTo = prompt("Up to: ")
+        
+        document.write(`<h3>Here is multiply table of ${number} up to ${upTo}:</h3>`)
+        for(let i = 1; i <= upTo; i++) {
+            document.write(`<h4> ${number} x ${i} = ${number * i} </h4>`)
+        }
+    </script>
+</body>
+</html>
