@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom selector</title>
+</head>
+<body>
+    
+
+    <h1 id="heading">Dom <em>Selector</em></h1>
+    <h3 id="lang">Languages</h3>
+    <p class="language">HTML</p>
+    <p class="language">CSS</p>
+    <p class="language">Javascript</p>
+    <p class="language">Bootstrap</p>
+    <p id="adding"></p>
+    <p id="adding1"></p>
+
+    <button onclick="languages()">Click</button>
+
+    <script>
+
+        function languages() {
+            // alert("Hello Js")
+            let heading = document.getElementById('heading');
+            console.log(heading);
+            console.log(heading.innerHTML);
+            console.log(heading.innerText);
+
+            let adding = document.getElementById('adding');
+            let adding1 = document.getElementById('adding1');
+            console.log(adding);
+
+            adding.innerHTML = '<i>This is inner HTML</i>';
+            adding1.innerText = '<i>This is inner HTML</i>';
+
+            let lang = document.getElementById('lang');
+            lang.innerText = "Saw Kyi Oo Aung";
+
+            let class_languages = document.getElementsByClassName('language');
+            console.log(class_languages);
+            console.log(class_languages[3]);
+            console.log(class_languages[3].innerText);
+
+            let tag_name = document.getElementsByTagName('p');
+            console.log(tag_name);
+            console.log(tag_name[6]);
+            console.log(tag_name[6].innerText);
+
+            let q_heading = document.querySelector('#heading');
+            console.log(q_heading);
+            console.log(q_heading.innerText);
+
+            let q_languages = document.querySelector('.language');
+            console.log(q_languages);
+
+            let q_languages_all = document.querySelectorAll('.language');
+            console.log(q_languages_all);
+            console.log(q_languages_all[2])
+            
+            let q_tag = document.querySelector('p');
+            console.log(q_tag);
+
+            let q_tag_all = document.querySelectorAll('p');
+            console.log(q_tag_all);
+
+        }
+    </script>
+</body>
+</html>

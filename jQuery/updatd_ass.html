@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body {
+            background-color: rgb(209, 198, 172);
+            padding-top: 1rem;
+        }
+
+        button, input, select {
+            padding: 4px 8px;
+            border-radius: 7px;
+            border: none;
+            background-color: rgb(208, 222, 227);
+        }
+
+        button {
+            cursor: pointer;
+            background-color: orange;
+            padding: 7px 15px;
+        }
+
+        button:hover {
+            background-color: rgba(0, 0, 0, 0.607);
+            color: white;
+            transform: scale(1.05);
+        }
+
+        input:focus, select:focus {
+            outline: none;
+        }
+
+        #update {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 align="center">Add Student Registration</h1>
+    <table align="center" cellpadding="10" class="table1">
+        <tbody>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td>Phone:</td>
+                <td><input type="text" name="phone" id="phone"></td>
+            </tr>
+            <tr>
+                <td>Year:</td>
+                <td>
+                    <select name="year" id="year">
+                        <option value="">Choose</option>
+                        <option value="1st">First Year</option>
+                        <option value="2nd">Second Year</option>
+                        <option value="3rd">Third Year</option>
+                        <option value="4th">Fourth Year</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button id="add">Add Student</button>
+                    <button id="update">Update Student</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p align="center"></p>
+
+    <table border="1" cellspacing="0" cellpadding="25" align="center" class="table2">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Year</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+
+
+
+<script src="jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        let num = 0;
+
+        $('#add').click(function () {
+
+            
+            if ($('input').val(), $('select').val()) {
+                num++;
+            }
+
+            let name = $('#name').val();
+            let email = $('#email').val();
+            let phone = Number($('#phone').val());
+            let year = $('#year').val(); 
+
+            let tr = `  <tr>
+                            <td>${num}</td>
+                            <td>${name}</td>
+                            <td>${email}</td>
+                            <td>${phone}</td>
+                            <td>${year}</td>
+                            <td>
+                                <button class='edit'>Edit</button>
+                                <button class='delete'>Delete</button>
+                            </td>
+                        </tr>`;
+
+            //check if input is empty
+            if ($('input').val(), $('select').val()) {
+                $('p').text("Student Added Successfully");
+                $('p').css("color", "green");
+                $('.table2 tbody').append(tr);
+                
+                name = $('#name').val("");
+                email = $('#email').val("");
+                phone = $('#phone').val("");
+                year = $('#year').val("");
+
+                // edit button
+            $('.edit').click(function () {
+                    let edit_num = $(this).closest('tr').find('td:nth-child(1)').text();
+                    let edit_name = $(this).closest('tr').find('td:nth-child(2)').text();
+                    let edit_email = $(this).closest('tr').find('td:nth-child(3)').text();
+                    let edit_phone = $(this).closest('tr').find('td:nth-child(4)').text();
+                    let edit_year = $(this).closest('tr').find('td:nth-child(5)').text();
+
+                    $('h1').text('Update Student Registration');
+                    $('#add').css({display: 'none'});
+                    $('#update').css({display: 'block'}).text(`Update Student (${edit_num})`);
+
+                    name = $('#name').val(edit_name);
+                    email = $('#email').val(edit_email);
+                    phone = $('#phone').val(edit_phone);
+                    year = $('#year').val(edit_year);
+
+                    $('#update').click(function () {
+                        let update_name = $('#name').val();
+                        let update_email = $('#email').val();
+                        let update_phone = $('#phone').val();
+                        let update_year = $('#year').val();
+
+                        tr = `  <tr>
+                                    <td>${edit_num}</td>
+                                    <td>${update_name}</td>
+                                    <td>${update_email}</td>
+                                    <td>${update_phone}</td>
+                                    <td>${update_year}</td>
+                                    <td>
+                                        <button class='edit'>Edit</button>
+                                        <button class='delete'>Delete</button>
+                                    </td>
+                                </tr>`;
+
+                        if ($('#update')) {
+
+                            $('h1').text('Add Student Registration');
+                            $('#add').css({display: 'block'});
+                            $('#update').css({display: 'none'});
+                            $('p').text("Student Updated Successfully");
+                            $('p').css("color", "green");
+
+                            name = $('#name').val("");
+                            email = $('#email').val("");
+                            phone = $('#phone').val("");
+                            year = $('#year').val("");
+
+                            $('.table2 tbody').html("");
+                            $('.table2 tbody').append(tr);
+                        }
+                    })
+                });
+            
+            // delete button
+            $('.delete').click(function () {
+                console.log('hi')
+                $(this).closest('tr').remove();
+            });
+                
+            } else { //if input is empty
+                $('p').text("Please fill all the fields!");
+                $('p').css("color", "red");
+            } 
+
+        })
+    })
+</script>
+
+</body>
+</html>

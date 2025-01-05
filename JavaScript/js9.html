@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        //function
+
+        function fullName() {
+            console.log('Hello Function!');
+        }
+
+        fullName();
+
+        function add(num1, num2) {
+            let result = num1 + num2
+            document.write(`<h3>${result}</h3>`);
+        }
+
+        add(20, 30);
+
+        function sub( num1 = 15, num2 = 10) {
+            let result = num1 - num2;
+            document.write(`<h3>${result}</h3>`);
+        }
+
+        sub();
+        sub(50, 10);
+
+        function getSize(length, width, height) {
+            let area = length * width;
+            let volume = length * width * height;
+            let size = [area, volume];
+            document.write("<h3>hello!</h3");
+            console.log("Hello");
+            return size;
+        }
+
+        getSize(10,10,10);
+
+        // let length = Number(prompt("Enter a number for lenght: "));
+        // let width = Number(prompt("Enter a number for width: "));
+        // let height = Number(prompt("Enter a number for height: "));
+
+        // let area = getSize(length, width, 0)[0];
+        // document.write(`<h3>The area is ${area}.</h3>`);
+        // let volume = getSize(length, width, height)[1];
+        // document.write(`<h3>The volume is ${volume}.</h3>`);
+
+        //object
+
+        let hotel = {
+            name: "zxzy hotel",
+            rooms: 40,
+            booked: 25,
+            gym: true,
+            roomTypes: ["twins","double","suite"],
+            checkAvailability: function() {
+                return this.rooms - this.booked;
+            },
+        }
+
+        console.log(hotel);
+
+        document.write(`<h3>Hotel name is ${hotel.name}.</h3>`);         //property
+        document.write(`<h3>Hotel total room is ${hotel.rooms}.</h3>`);
+        document.write(`<h3>Room availability is ${hotel.checkAvailability()}.</h3>`);   //method
+
+        hotel.pool = true;
+        console.log(hotel);
+
+        delete hotel.gym;
+        console.log(hotel);
+    </script>
+</body>
+</html>

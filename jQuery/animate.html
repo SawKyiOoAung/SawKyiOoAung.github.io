@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #pannel {
+            max-width: 150px;
+            padding: 50px 0;
+            background-color: orange;
+            color: rgb(44, 78, 89);
+            text-align: center;
+            position: relative;
+            border-radius: 10px;
+        }
+
+        button {
+            border-radius: 10px;
+            background-color: rgb(44, 78, 89);
+            color: orange;
+            border: none;
+            padding: 10px 20px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+    <p id="pannel">Animation</p>
+    <button id="start">Start</button>
+    <button id="stop">Stopp</button>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#start').click(function () {
+                $('#pannel, button')
+                .animate({left: '350px'},1000)
+                .animate({top: '350px'},1000)
+                .animate({left: '0px'},1000)
+                .animate({top: '0px'},1000);
+            })
+            $('#stop').click(function () {
+                $('#pannel, button').stop();
+            })
+        })
+    </script>
+</body>
+</html>
