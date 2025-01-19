@@ -17,7 +17,7 @@
             <div class="link">Home</div>
             <div class="cart">
                 <i class="fa-solid fa-cart-shopping"></i>
-                <div class="circle">0</div>
+                <div class="circle" id="item-count">0</div>
             </div>
         </div>
     </div>
@@ -35,7 +35,7 @@
                     <h3 class="title">laptop 1</h3>
                     <div class="price">Price : 2,300,000 MMK</div>
                     <div class="button-add">
-                        <button id="add-to-cart">Add to Cart</button>
+                        <button class="add-to-cart" data-id="1" data-name="laptop-1" data-price="2300000">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -48,7 +48,7 @@
                     <h3 class="title">laptop 2</h3>
                     <div class="price">Price : 4,500,000 MMK</div>
                     <div class="button-add">
-                        <button id="add-to-cart">Add to Cart</button>
+                        <button class="add-to-cart" data-id="2" data-name="laptop-2" data-price="4500000">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -60,7 +60,7 @@
                     <h3 class="title">laptop 3</h3>
                     <div class="price">Price : 2,000,000 MMK</div>
                     <div class="button-add">
-                        <button id="add-to-cart">Add to Cart</button>
+                        <button class="add-to-cart" data-id="3" data-name="laptop-3" data-price="2000000">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -72,7 +72,7 @@
                     <h3 class="title">laptop 4</h3>
                     <div class="price">Price : 1,900,000 MMK</div>
                     <div class="button-add">
-                        <button id="add-to-cart">Add to Cart</button>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -87,7 +87,7 @@
                     <h3 class="title">iPhone 1</h3>
                     <div class="price">Price : 2,300,000 MMK</div>
                     <div class="button-add">
-                        <button id="add-to-cart">Add to Cart</button>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -100,7 +100,7 @@
                     <h3 class="title">iPhone 2</h3>
                     <div class="price">Price : 2,900,000 MMK</div>
                     <div class="button-add">
-                        <button id="add-to-cart">Add to Cart</button>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -113,7 +113,7 @@
                     <h3 class="title">iPhone 3</h3>
                     <div class="price">Price : 2,500,000 MMK</div>
                     <div class="button-add">
-                        <button id="add-to-cart">Add to Cart</button>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -125,7 +125,7 @@
                     <h3 class="title">iPhone 4</h3>
                     <div class="price">Price : 2,700,000 MMK</div>
                     <div class="button-add">
-                        <button id="add-to-cart">Add to Cart</button>
+                        <button class="add-to-cart">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -133,6 +133,7 @@
 
     </div>
 
-    
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

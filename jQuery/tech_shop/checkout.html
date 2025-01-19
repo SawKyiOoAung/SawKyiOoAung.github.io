@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!----------------- CSS ------------------- -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/af12da7f42.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!------------------------------- Nav Bar--------------------- -->
+    <div class="nav-container">
+        <h3 class="logo">IT Shop</h3>
+        <div class="nav-link">
+            <div class="link">Home</div>
+            <div class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="circle" id="item-count">0</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card -->
+
+    <div class="card-container">
+
+        <table border="1" cellspacing="0" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Item Name</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>   
+            <tbody id="item-tbody">
+
+            </tbody>
+        </table>
+        <br><br>
+        <button id="order">Order Now</button>
+
+    </div>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

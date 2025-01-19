@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: ;
+    --secondary-color: ;
+    --dark-mode: darkgray;
+    --light-mode: lightgray;
+}
+
+/* wave */
+.custom-shape-divider-bottom-1737272697 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1737272697 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 48px;
+}
+
+.custom-shape-divider-bottom-1737272697 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+/* Hero Section */
+
+/* Nav section */
+
+.hero-section .container {
+    background-color: transparent !important;
+}
+
+.hero-section .navbar {
+    background-color: transparent !important;
+    color: white !important;
+}
+
+
+.hero-section > .container-fluid {
+    position: relative;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-image: url(images/hero-img2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    height: 80vh;
+    width: 100vw;
+}
+
+.hero-section form {
+    margin-left: 5rem;
+}
+
+/* End Nav Section */
+
+.hero-section .hero-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.btn {
+    background-color: var();
+}
+
+

@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+th, td {
+    padding: 30px;
+}
+
+.min, .max {
+    padding: 10px;
+    margin: 0px 4px;
+}
+
 /* Nabv Bar */
 
 .nav-container {
@@ -73,7 +82,7 @@
     padding: 0.4rem;
 }
 
-#add-to-cart {
+.add-to-cart {
     background-color: #3b5998;
     color: white;
     padding: 0.5rem 1rem;
