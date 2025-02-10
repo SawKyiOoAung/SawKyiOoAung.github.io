@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+
+    <div class="div-1"></div>
+    <div class="div-2"></div>
+
+    <script src="jQuery/tech_shop/jquery-3.7.1.min.js"></script>
+    <script>
+        $(Document).ready(function () {
+            $('.div-1').on('mouseenter', function () {
+                $('.div-2').css({'background-color': 'Orange',
+                    'transform': 'rotate(20deg)'
+                })
+            });
+
+            $('.div-1').on('mouseleave', function () {
+                $('.div-2').css({'background-color': 'transparent',
+                    'transform': 'rotate(0deg)'
+                })
+            })         
+        })
+    </script>
+</body>
+</html>

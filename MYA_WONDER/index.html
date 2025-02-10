@@ -5,44 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home-page</title>
     <link rel="stylesheet" href="../Bootstrap/bootstrap/css/bootstrap.min.css">
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/af12da7f42.js" crossorigin="anonymous"></script>
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="index.html">
     <!-- ----------------------------------------------Start Hero Section------------------------------------------- -->
-     <div class="hero-section">
-            <div class="container-fluid">
+    <div class="hero-section">
+            <div class="container-fluid text-center">
                 <!-- ------------------------------------- Start Nav------------------------------------------------------------ -->
-                <div class="container">
+                <div class="container-fluid nav-container-fluid">
+                  <div class="container">
                     <nav class="navbar navbar-expand-lg">
                         <div class="container-fluid">
-                          <a class="navbar-brand" href="#">Myanmar Wonders</a>
+                          <a class="navbar-brand" href="#"><span class="text-uppercase">Myanmar <br> Wonders</span></a>
                           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                           </button>
                           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ms-auto">
+                            <ul class="navbar-nav ms-auto me-auto">
                               <li class="nav-item">
-                                <a class="nav-link" href="#">Home</a>
+                                <a class="nav-link" href="index.html">Home</a>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
+                                <div class="dropdown">
+                                  <a class="nav-link" href="#">Explore <span><i class="fa-solid fa-angle-up"></i></span></a>
+                                  <div class="dropdown-content">
+                                    <a href="pages/explore_kayin.html" class="d-flex justify-content-between position-relative">
+                                        <div>South Myamar</div>
+                                        <div class="me-2"><i class="fa-solid fa-chevron-right"></i></div>
+                                    </a>
+                                    <a href="pages/explore_Mandalay.html" class="d-flex justify-content-between">
+                                      <div>Central Myanmar</div>
+                                      <div class="me-2"><i class="fa-solid fa-chevron-right"></i></div>
+                                    </a>
+                                    <a href="#" class="d-flex justify-content-between">
+                                      <div>North Myanmar</div>
+                                      <div class="me-2"><i class="fa-solid fa-chevron-right"></i></div>
+                                    </a>
+                                  </div>
+                                </div>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link" href="#">Explore</a>
+                                <div class="dropdown">
+                                  <a class="nav-link" href="#">Hightlights <span><i class="fa-solid fa-angle-up"></i></span></a>
+                                  <div class="dropdown-content">
+                                    <a href="pages/festival_jan.html">Festivals</a>
+                                    <a href="#">Top Destinations</a>
+                                    <a href="#">Hidden Gems</a>
+                                    <a href="#">Story Highlights</a>
+                                    <a href="#">Special Events or Seasonal Highlights</a>
+                                  </div>
+                                </div>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link" href="#">Plan your vist</a>
+                                <div class="dropdown">
+                                  <a class="nav-link" href="#">Guide <span><i class="fa-solid fa-angle-up"></i></span></a>
+                                  <div class="dropdown-content">
+                                    <a href="pages/accomodation.html">Accomodation</a>
+                                    <a href="#">Tours</a>
+                                  </div>
+                                </div>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link" href="#">Contact us</a>
+                                <div class="dropdown">
+                                  <a class="nav-link" href="#">Resoucres <span><i class="fa-solid fa-angle-up"></i></span></a>
+                                  <div class="dropdown-content">
+                                    <a href="#">Articles</a>
+                                    <a href="#">Videos & Photos</a>
+                                    <a href="#">Map</a>
+                                    <a href="#">News</a>
+                                    <a href="#">Visitors' Guide Books</a>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="pages/about_us.html">About</a>
                               </li>
                             </ul>
                             <form class="d-flex">
-                              <button class="btn" type="submit">FAQs</button>
+                              <button class="btn btn-accent" type="submit">FAQs</button>
                             </form>
                           </div>
                         </div>
-                      </nav>
+                    </nav>
+                  </div>
                 </div>
                 <!-- ------------------------------------- End Nav------------------------------------------------------------ -->
                 <div class="custom-shape-divider-bottom-1737272697">
@@ -53,14 +103,494 @@
                     </svg>
                 </div>
 
-                <div class="hero-text">
-                    <h1>Discove Myanmar : <br> A land of beauty culture and wander</h1>
-                    <div class="hero-button-div">
-                        <button class="btn border-dark">Learn More</button>
-                        <button class="btn btn-dark">Explore Now</button>
+                <div class="container">
+                  <div class="hero-text">
+                    <h1 class=" mb-3 text-start">Discover Myanmar <br> <span>Where Beauty Meets Timeless Culture</span></h1>
+                    <p class="text-start">Explore Myanmar’s stunning landscapes, ancient temples, and rich cultural heritage like never before.</p>
+                    <div class="hero-button-div d-flex flex-sm-row align-items-sm-center">
+                        <button class="btn btn-white">Learn More</button>
+                        <button class="btn btn-accent">Explore <i class="fa-solid fa-arrow-right-long ms-1"></i></button>
                     </div>
+                  </div>
                 </div>
             </div>
+    </div>
     <!-- ----------------------------------------------End Hero Section------------------------------------------- -->
+    
+    <!-- ----------------------------------------------Start Our Mission Section------------------------------------------- -->
+    <div class="our-mission-section margin-top">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-6 position-relative d-flex justify-content-center align-items-center">
+            <div class="img-div block-ani">
+              <img src="images/our-mission.jpeg" alt="" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-lg-6 mt-sm-4">
+            <div class="our-mission-text">
+              <h3 class="our-mission-title title-black mb-0">About Myanmar Wonders</h3>
+              <div class="main-title-underline"></div>
+              <p class="p-text-color">At Myanmar Wonders, we bring you closer to the heart of a land steeped in ancient history and breathtaking beauty. From the iconic temples of Bagan to the serene waters of Inle Lake, our mission is to guide you through Myanmar's rich culture, vibrant traditions, and stunning landscapes. Let us inspire your next journey and help you uncover the wonders that make Myanmar truly unique.</p>
+              <p class="mt-2 p-text-color">Our certified License Number is 123456789MT0001.</p>
+              <button class="btn btn-accent">About us <i class="fa-solid fa-arrow-right-long ms-2"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------------------------------------End Our Missi0n Section------------------------------------------- -->
+
+
+    <!-- ----------------------------------------------Start why Section------------------------------------------- -->
+    <div class="why-section margin-top mt-ms-5">
+      <div class="container">
+        <div class="mb-lg-2 mb-ms-5">
+          <h3 class="title-black mb-0">Why Myanmar</h3>
+          <div class="main-title-underline"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <h4 class="title-black-1">Timeless Heritage</h4>
+            <p class="p-text-color">Step into a land where history lives. From Bagan’s temples to Yangon’s colonial streets, Myanmar’s heritage transcends time. Marvel at pagodas, traditions, and timeless stories.</p>
+            <button class="btn btn-accent">Heritage<i class="fa-solid fa-arrow-right-long ms-2"></i></button>
+          </div>
+          <div class="col-lg-4">
+            <h4 class="title-black-1">Natural Beauty</h4>
+            <p class="p-text-color">Experience Myanmar’s breathtaking beauty—from Inle Lake’s tranquil waters to Ngapali’s golden shores and Shan’s rolling hills. Discover nature’s untouched serenity.</p>
+            <button class="btn btn-accent">Explore Nature<i class="fa-solid fa-arrow-right-long ms-2"></i></button>
+          </div>
+          <div class="col-lg-4">
+            <h4 class="title-black-1">Warm Hospitality</h4>
+            <p class="p-text-color">Experience Myanmar’s breathtaking beauty—from Inle Lake’s tranquil waters to Ngapali’s golden shores and Shan’s rolling hills. Here, nature’s serenity and diversity create an unforgettable escape.</p>
+            <button class="btn btn-accent">Meet the People<i class="fa-solid fa-arrow-right-long ms-2"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------------------------------------End Why Section------------------------------------------- -->
+
+
+    <!-- ----------------------------------------------Start glance Section------------------------------------------- -->
+    <div class="glance-section">
+      <div class="container-fluid position-relative">
+        <div class="container">
+          <div class="num-container d-flex text-center justify-content-between flex-column flex-sm-row">
+            <div class="num-1">
+              <div class="mb-3"><i class="fa-solid fa-umbrella-beach"></i></div>
+              <h3>30+</h3>
+              <p>Pristine Beaches</p>
+            </div>
+            <div class="num-1">
+              <div class="mb-3"><i class="fa-solid fa-mountain-sun"></i></div>
+              <h3>100+</h3>
+              <p>Majestic Mountain Ranges</p>
+            </div>
+            <div class="num-1">
+              <div class="mb-3"><i class="fa-solid fa-synagogue"></i></div>
+              <h3>1000+</h3>
+              <p>Ancient Temples</p>
+            </div>
+            <div class="num-1">
+              <div class="mb-3"><i class="fa-solid fa-people-robbery"></i></div>
+              <h3>200+</h3>
+              <p>Vibrant Festivals</p>
+            </div>
+          </div>
+        </div>
+        <div class="glance-over-lay"></div>
+      </div>
+    </div>
+    <!-- ----------------------------------------------End glance Section------------------------------------------- -->
+
+    <!-- ----------------------------------------------Start Article Section------------------------------------------- -->
+    <div class="article-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="d-flex justify-content-between align-items-center">
+              <h3 class="title-black">Articles</h3>
+              <h5>All Articles <i class="fa-arrow-right-long fa-solid ms-1"></i></h5>
+            </div>
+            <div class="main-title-underline w-100"></div>
+            <div class="article-card d-lg-flex flex-md-row flex-sm-column d-flex flex-column">
+              <div class="img-div">
+                <img src="images/insta-14.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="article-content">
+                <h3 class="title-black-1 mb-1">The Timeless Allure of Bagan</h3>
+                <p class="p-text-color fw-bold mb-1"><i class="fa-regular fa-calendar accent-color me-2"></i>09/11/2024 | 5:30 pm – 12:00 am</p>
+                <p class="p-text-color">Bagan, Myanmar, features over 2,000 ancient temples, including Ananda Temple, perfect for sunset views and hot-air balloon rides.</p>
+              </div>
+            </div>
+            <div class="article-card d-lg-flex flex-md-row flex-sm-column d-flex flex-column">
+              <div class="img-div">
+                <img src="images/insta-1.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="article-content">
+                <h3 class="title-black-1 mb-1">Myanmar’s Spiritual Heart</h3>
+                <p class="p-text-color fw-bold mb-1"><i class="fa-regular fa-calendar accent-color me-2"></i>19/10/2024 – 07/12/2024 (Multi-day Event)</p>
+                <p class="p-text-color">Shwedagon Pagoda in Yangon shines with gold and diamonds, housing Buddha's relics and offering stunning sunset views.</p>
+              </div>
+            </div>
+            <div class="article-card d-lg-flex flex-md-row flex-sm-column d-flex flex-column">
+              <div class="img-div">
+                <img src="images/insta-1.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="article-content">
+                <h3 class="title-black-1 mb-1">Where Tradition Meets Tranquility</h3>
+                <p class="p-text-color fw-bold mb-1"><i class="fa-regular fa-calendar accent-color me-2"></i>08/11/2024 | 6:30 pm – 12:00 am</p>
+                <p class="p-text-color">Inle Lake, in the Shan Hills, is known for floating villages, stunning sunset views, leg-rowing fishermen, and stunning stilt houses.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="d-flex justify-content-between align-items-center">
+              <h3 class="title-black">News</h3>
+              <h5>All News <i class="fa-arrow-right-long fa-solid ms-1"></i></h5>
+            </div>
+            <div class="main-title-underline w-100"></div>
+            <div class="article-card news-card">
+              <div class="article-content">
+                <h3 class="title-black-1 mb-1">Must-Visit Destination</h3>
+                <p class="p-text-color fw-bold mb-1"><i class="fa-regular fa-calendar accent-color me-2"></i> December 22, 2024</p>
+                <p class="p-text-color">Shwedagon Pagoda in Yangon glows with gold and diamonds, housing Buddha's relics and offering breathtaking sunset views.</p>
+              </div>
+            </div>
+            <div class="article-card news-card">
+              <div class="article-content">
+                <h3 class="title-black-1 mb-1">Inle Lake’s Unique Culture </h3>
+                <p class="p-text-color fw-bold mb-1"><i class="fa-regular fa-calendar accent-color me-2"></i> October 11, 2023</p>
+                <p class="p-text-color">Inle Lake's floating villages and leg-rowing fishermen charm travelers with stilt-house markets and traditional crafts.</p>
+              </div>
+            </div>
+            <div class="article-card news-card">
+              <div class="article-content">
+                <h3 class="title-black-1 mb-1">Shwedagon Pagoda's Shines</h3>
+                <p class="p-text-color fw-bold mb-1"><i class="fa-regular fa-calendar accent-color me-2"></i>April 14, 2025</p>
+                <p class="p-text-color">Shwedagon Pagoda in Yangon, adorned with gold and diamonds, is Myanmar's sacred site, especially stunning at sunset.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+    <!-- ----------------------------------------------End Article Section------------------------------------------- -->
+
+
+    <!-- ----------------------------------------------Start unesco Section------------------------------------------- -->
+    <div class="unesco-section margin-top">
+      <div class="container">
+        <div>
+          <h3 class="title-black">UNESCO-Recognized Treasures of Myanmar</h3>
+          <div class="main-title-underline"></div>
+        </div>
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-md-6 order-sm-1 order-md-0 order-1">
+            <h4 class="title-black-1">Bagan: The Land of Temples</h4>
+            <p class="p-text-color">Bagan, a UNESCO World Heritage Site, boasts over 2,000 ancient temples, offering a mesmerizing glimpse into Myanmar’s Buddhist heritage. Its stunning sunrise and sunset views, paired with remarkable architecture, make it a must-visit for history lovers and adventurers.</p>
+            <button class="btn btn-accent">Explore Bagan<i class="fa-solid fa-arrow-right-long ms-2"></i></button>
+          </div>
+          <div class="col-md-6 i order-sm-0 order-md-1 order-0">
+            <div class="img-div">
+              <img src="images/bagan-unesco.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-md-6 i order-sm-2 order-md-2 order-2">
+            <div class="img-div">
+              <img src="images/thingyan-unesco.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-md-6 order-sm-3 order-md-3 order-3">
+            <h4 class="title-black-1">Thingyan: The Water Festivals</h4>
+            <p class="p-text-color">Thingyan, Myanmar’s most celebrated festival, marks the Burmese New Year with water fights, traditional performances, and shared blessings. This UNESCO-recognized event brings families together for purification, renewal, and vibrant street festivities, offering a true glimpse into Myanmar’s culture.</p>
+            <button class="btn btn-accent">Join the Celebration<i class="fa-solid fa-arrow-right-long ms-2"></i></button>
+          </div>
+          <div class="col-md-6 order-sm-5 order-md-4 order-5">
+            <h4 class="title-black-1">Pyu Ancient Cities: Cradle of Civilization</h4>
+            <p class="p-text-color">The Pyu Ancient Cities—Sri Ksetra, Beikthano, and Halin—are Myanmar's earliest urban settlements and UNESCO World Heritage Sites. Dating back to 200 BCE, they reveal the early development of Buddhist culture and urban planning in Southeast Asia.</p>
+            <button class="btn btn-accent">Discover Pyu Cities<i class="fa-solid fa-arrow-right-long ms-2"></i></button>
+          </div>
+          <div class="col-lg-6 i order-sm-4 order-md-5 order-4">
+            <div class="img-div">
+              <img src="images/unesco-phyu.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+    <!-- ----------------------------------------------End unesco Section------------------------------------------- -->
+
+
+    <!-- ----------------------------------------------Start clf Section------------------------------------------- -->
+    <div class="clf-section margin-top">
+      <div class="container-fluid position-relative">
+        <div class="custom-shape-divider-top-1737335074">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+          </svg>
+        </div>
+        <div class="container">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-lg-8">
+            <div class="d-flex flex-column align-items-center align-items-lg-start">
+              <h3 class="text-center title-black">Culture, Landmarks, and Festivals</h3>
+              <div class="main-title-underline mb-5"></div>
+            </div>
+            <h4 class="title-black-1">The Essence of Myanmar</h4>
+            <p>Myanmar is a land steeped in <span><b>culture</b></span>, history, and celebration. Its centuries-old traditions and practices remain vibrantly alive, offering visitors a chance to experience an authentic and timeless way of life. From the intricate craftsmanship of lacquerware to the serene art of meditation, Myanmar’s culture is as diverse as it is enduring.
+            <br><br>
+            The country is also home to breathtaking <span><b>landmarks</b></span> that leave visitors in awe. Explore the ancient temples of Bagan, the majestic Shwedagon Pagoda in Yangon, and the serene floating villages of Inle Lake. These iconic destinations stand as symbols of Myanmar’s storied past and spiritual heritage.
+            <br><br>
+            Myanmar’s <span><b>festivals</b></span> are a spectacle of color, joy, and togetherness. Celebrations like the Thingyan Water Festival and the Thadingyut Festival of Lights unite communities and offer a glimpse into the country's heartfelt traditions. These lively events are a true testament to Myanmar’s spirit of unity and cultural pride.</p>
+            <div class="clf-bullet">
+              <p class="mb-0"> <span>•</span> Timeless Traditions: Myanmar's culture reflects its deep roots in Buddhism and rich artistic heritage.</p>
+              <p class="mb-0"> <span>•</span> Iconic Landmarks: Visit breathtaking sites like Bagan’s ancient temples and the golden Shwedagon Pagoda.</p>
+              <p class="mb-0"> <span>•</span> Festivals Galore: Celebrate vibrant events like Thingyan Water Festival and Thadingyut Festival of Lights.</p>
+              <p class="mb-0"> <span>•</span> Craftsmanship: Discover intricate lacquerware, traditional textiles, and gold-leaf artistry.</p>
+              <p class="mb-0"> <span>•</span> Spiritual Serenity: Explore serene monasteries and witness daily rituals of monks and locals.</p>
+              <p class="mb-0"> <span>•</span> Welcoming Communities: Experience the warmth and hospitality of Myanmar’s diverse people.</p>
+              </div>
+
+          </div>
+          <div class="col-lg-4">
+            <div class="clf-card clf-card-1 mt-sm-5">
+              <div class="img-div">
+                <img src="images/clf-culture.jpg" alt="culture" class="img-fluid">
+              </div>
+              <p>Rich traditions and vibrant arts.</p>
+            </div>
+            <div class="clf-card clf-card-2">
+              <div class="img-div">
+                <img src="images/clf-taunggyi.jpg" alt="culture" class="img-fluid">
+              </div>
+              <p>Colorful balloons lighting up the sky.</p>
+            </div>
+            <div class="clf-card clf-card-3">
+              <div class="img-div">
+                <img src="images/clf-thingyan.jpg" alt="culture" class="img-fluid">
+              </div>
+              <p>Water fights and joyful celebrations</p>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="custom-shape-divider-bottom-1737340238">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+        </div>
+        
+      </div>
+    </div>
+    <!-- ----------------------------------------------End clf Section------------------------------------------- -->
+
+    <!-- ----------------------------------------------Start Instagram Section------------------------------------------- -->
+    <div class="instagram-section d-flex justify-content-center align-items-center flex-column margin-top">
+      <div class="container">
+        <div class="d-flex align-items-center flex-column">
+          <h3 class="title-black text-center mb-0">Join us on Instagram!</h3>
+          <p class="text-secondary text-center">
+            <i class="fa-brands fa-instagram"></i>
+              wonders.myanmar</p>
+          <div class="main-title-underline"></div>
+        </div>
+          <!-- 1 -->
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="img-div">
+              <img src="images/insta-5.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="img-div">
+              <img src="images/insta-2.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="img-div">
+              <img src="images/insta-12.jpeg" alt="" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="img-div">
+              <img src="images/insta-6.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+          <!-- 2 -->
+        <div class="d-none d-lg-block">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="img-div">
+                <img src="images/insta-14.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="img-div">
+                <img src="images/insta-16.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="img-div">
+                <img src="images/insta-13.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="img-div">
+                <img src="images/insta-10.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+          <!-- 3 -->
+        <div class="d-none d-lg-block">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="img-div">
+                <img src="images/insta-11.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="img-div">
+                <img src="images/insta-8.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="img-div">
+                <img src="images/insta-9.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="img-div">
+                <img src="images/insta-4.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="insta-button-div d-flex justify-content-center align-items-center mt-4 mb-2 gap-4">
+          <button class="btn btn-accent">Load More...</button>
+          <button class="btn btn-accent"><i class="fa-brands fa-instagram me-2"></i>Follow on Instagram</button>
+        </div>
+      </div>
+      <button class="btn btn-accent">Follow Us On Other Mediums <i class="fa-solid fa-arrow-right-long ms-2"></i></button>
+    </div>
+    <!-- ----------------------------------------------End Instagram Section------------------------------------------- -->
+
+    <!-- ----------------------------------------------Start footer Section------------------------------------------- -->
+    <div class="footer-section margin-top">
+      <!-- ----------------------------------------------Start call-to Section------------------------------------------- -->
+    <div class="call-to-section">
+      <div class="container-fluid position-relative">
+        <div class="container d-flex justify-content-center align-items-center flex-column text-center">
+          <div class="call-to-content">
+            <h1 class="hero-h1">Embark on an Unforgettable Journey to Explore <br> the Wonders of Myanmar's Rich Culture, Landscapes, and Festivals</h1>
+            <p class="hero-p">Start planning your adventure today and experience Myanmar's magic</p>
+          </div>
+          <button class="btn btn-accent">Start Your Journey 
+            <i class="fa-solid fa-arrow-right-long ms-2"></i></button>
+        </div>
+
+        <!-- wave -->
+        <div class="custom-shape-divider-bottom-1737340238">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------------------------------------End call-to Section------------------------------------------- -->
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-3">
+            <h3 class="title-black-1">Myanmar Wonders</h3>
+            <p class="p-text-color">Myanmar Wonders is dedicated to showcasing the rich cultural heritage, natural beauty, and traditions of Myanmar, inspiring people worldwide to discover its timeless charm.</p>
+            <p class="p-text-color fw-bold">Our certified License Number is 123456789MT0001.</p>
+          </div>
+          <div class="col-6 col-sm-6 col-md-2">
+            <h4 class="title-black-1">Browse</h4>
+            <ul class="list-unstyled p-text-color">
+              <li>Home</li>
+              <li>Myanmar's Wonders</li>
+              <li>Cultural Heritage</li>
+              <li>Travel Tips</li>
+              <li>Sustainable Tourism</li>
+              <li>Special Offers</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+          <div class="col-6 col-sm-6 col-md-2">
+            <h4 class="title-black-1">About Us</h4>
+            <ul class="list-unstyled p-text-color">
+              <li>About us</li>
+              <li>Our Story</li>
+              <li>Vision & Mission</li>
+              <li>Video Gallery</li>
+              <li>Photo Gallery</li>
+              <li>Traveler Testimonials</li>
+            </ul>
+          </div>
+          <div class="col-6 col-sm-6 col-md-2">
+            <h4 class="title-black-1">Plan Your Visit</h4>
+            <ul class="list-unstyled p-text-color">
+              <li>Donate</li>
+              <li>Ways to Explore</li>
+              <li>Cultural Experiences</li>
+              <li>Myanmar Youth Outreach</li>
+              <li>Sustainable Tourism</li>
+              <li>Upcoming Events</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-12 col-md-3">
+            <h4 class="title-black-1">Contact Us</h4>
+            <div class="d-flex">
+              <span><i class="fa-solid fa-location-dot accent-color"></i></span>
+              <span class="location-text p-text-color">123 Pyay Road, Yangon, Myanmar, 11011</span>
+            </div>
+            <div class="d-flex">
+              <span><i class="fa-regular fa-envelope accent-color"></i></span>
+              <span class="location-text text-secondary">info@myanmarwonders</span>
+            </div>
+            <div class="footer-icon mt-3">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-youtube"></i>
+              <i class="fab fa-linkedin"></i>
+              <i class="fab fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- reserve -->
+    <div class="container-fluid px-0 py-3 reserve d-flex flex-md-row justify-content-center align-items-center flex-sm-column">
+      <!-- 1 -->
+      <div class="d-flex justify-content-start w-50 w-sm-100 w-lg-50 text-secondary">
+        <div class="img-div">
+          <img src="images/mya-flag.png" alt="" class="img-fluid">
+        </div>
+        <div>
+          Myanmar Wonders © 2025
+          All rights reserved.
+        </div>
+        </div>
+      
+      <!-- 2 -->
+      <div class="text-secondary">Non-Profit Website Designed By <span class="my-name">Saw Kyi Oo Aung.</span></div>
+    </div>
+    <!-- ----------------------------------------------End footer Section------------------------------------------- -->
+
+
+
+
+
+
+<!-- jQuery and js bootstrap -->
+<script src="../Bootstrap/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../jQuery/tech_shop/jquery-3.7.1.min.js"></script>
+<script src="main.js"></script>
+
 </body>
 </html>
